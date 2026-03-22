@@ -1,0 +1,64 @@
+
+Prompt: Dr. Soma Mandal MD Authority Hub
+
+1. Project Overview
+
+Intent: Rebuild somamandalmd.com to transition from a clinical physician site to a "Medical Authority & Media Hub." The site must bridge the gap between Dr. Mandal’s roles as an NYU and Oxford-trained physician and a leading voice for midlife women on YouTube and social media. 
+
+2. Visual & Brand Aesthetic
+
+-- ** Read and familiarize yourself with the Soma Mandal brand guidelines **
+- **Identity:** A bridge between a biological research lab and an avant-garde luxury magazine.
+-- Persona: "The Warm Expert." (Sophisticated, clinical, yet highly accessible).
+-- Palette: Muted neutrals, soft sage, and slate blues to evoke calm and professional trust. Blend this with her signature pink color from the hero; use that pink color as the accent color. Background could be a gradient of the accent and sage colors so that it all blends well.
+-- Typography: Elegant serif for headers (authority) paired with clean sans-serif for body text (readability).
+-- Key Design Elements: High-use of white space, rounded corners, and "cards" to organize multimedia content.
+
+3. Core Architecture (Sitemap)
+
+-- Home: A "Story-Led" hero section highlighting her 3 pillars: Physician, Author, Speaker.
+
+-- Soma Says (Podcast/Video Hub): A dedicated, searchable gallery of her YouTube content.
+
+-- The Books: A high-conversion landing page for Menopause I Do Not Fear You with integrated "Buy Now" and "Review" sections. So the same for her second book "Midlife Masala"
+
+-- Speaker/Media: A professional "One-Sheet" style page for event planners.
+-- Clinical Practice: Streamlined section with a link to her HMH practice page.
+
+4. Technical Requirements & Integrations
+-- YouTube Embedding: Create a dynamic "Featured Video" section on the homepage that pulls the latest upload from @SomaSays.
+
+-- Video Gallery: Build a category-based video wall (e.g., Menopause, Longevity, Mental Health) using embedded YouTube players that maintain site speed (lazy-loading).
+
+-- Conversion Optimization:
+	-- Sticky "Book Dr. Mandal" button for speaking.
+-- Newsletter "Lead Magnet" (e.g., "The Midlife Blueprint PDF").
+-- Mobile-First: Ensure the video gallery is highly responsive and easy to navigate via thumb-taps.
+
+5. Implementation Instructions for the AI
+
+-- "Make sure this website can easily be installed on Squarespace"
+-- "Focus on a single-page scrolling architecture for the homepage to maximize narrative flow."
+-- "Use the Youtube video information you've gathered, and present it in a tasteful, usable way"
+
+
+
+### Visual Texture
+- Implement a global CSS noise overlay using an inline SVG `<feTurbulence>` filter at **0.05 opacity** to eliminate flat digital gradients.
+- Use a `rounded-[2rem]` to `rounded-[3rem]` radius system for all containers. No sharp corners anywhere.
+
+### Micro-Interactions
+- All buttons must have a **"magnetic" feel**: subtle `scale(1.03)` on hover with `cubic-bezier(0.25, 0.46, 0.45, 0.94)`.
+- Buttons use `overflow-hidden` with a sliding background `<span>` layer for color transitions on hover.
+- Links and interactive elements get a `translateY(-1px)` lift on hover.
+
+### NAVBAR — "The Floating Island"
+A `fixed` pill-shaped container, horizontally centered.
+- **Morphing Logic:** Transparent with light text at hero top. Transitions to `bg-[background]/60 backdrop-blur-xl` with primary-colored text and a subtle `border` when scrolled past the hero. Use `IntersectionObserver` or ScrollTrigger.
+- Contains: Logo (brand name as text), 3-4 nav links, CTA button (accent color).
+
+- **No placeholders.** Every card, every label, every animation must be fully implemented and functional.
+- **Responsive:** Mobile-first. Stack cards vertically on mobile. Reduce hero font sizes. Collapse navbar into a minimal version.
+
+ASK QUESTIONS TO ENSURE HIGH-QUALITY DESIGN AND CONTENT, OR IF THE INSTRUCTIONS ARE CONTRADICTORY 
+DOUBLE CHECK YOUR WORK TO CONFIRM IT IS MEETING THE OBJECTIVES SET -- FROM A DESIGN, CONTENT AND FUNCTIONALITY PERSPECTIVE.

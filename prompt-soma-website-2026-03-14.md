@@ -1,0 +1,159 @@
+## Dr. Soma Mandal MD — Authority Hub Website
+
+### 1. Project Overview
+
+**Intent:** Rebuild somamandalmd.com as a **"Medical Authority & Media Hub"** — transitioning from a basic clinical physician page to a destination that positions Dr. Mandal as America's leading voice on midlife women's health. The site must unify her roles as a board-certified internist (NYU Med, Oxford research fellow, Hackensack Meridian Medical Director of Women's Health), bestselling author of two books, and a growing media personality with 55+ YouTube episodes and 178+ press placements.
+
+**Target audience:** Women 40+, navigating perimenopause and menopause, seeking a trusted physician voice who blends Western medicine with Eastern wellness — particularly women of color and South Asian women.
+
+**Platform constraint:** The final deliverable must be a single, self-contained HTML file (with inline CSS and JS) that can be pasted into a Squarespace Code Block or adapted as a custom Squarespace template. Avoid any framework dependencies (no React, no Tailwind build step, no npm). Vanilla HTML, CSS, and JavaScript only.
+
+---
+
+### 2. Brand & Visual Identity
+
+**Before writing any code, read the brand book PDF in `site-assets/documents/soma brand book.pdf` to internalize the official brand guidelines.**
+
+**Brand personality:** Strong + Feminine. "The Warm Expert" — sophisticated and clinically credible, yet deeply accessible and personable.
+
+**Color palette (from brand book — mandatory):**
+- **Primary accent:** Magenta `#E75294` — used for headlines, CTAs, and key UI elements
+- **Text:** Off-Black `#333333` — all body copy and secondary text
+- **Extended palette (for website depth):** Warm white `#FAF8F6` for backgrounds, soft blush `#FDF2F4` for section alternation, and a muted warm gray `#6B6B6B` for captions/metadata. These extensions should feel like natural companions to the magenta — warm, not cool.
+
+**Typography:**
+- **Headlines:** A bold, high-contrast serif that evokes the brand's Akerbrygge Display. Use `Playfair Display` (Google Fonts) as the web equivalent — set in magenta for primary headlines, off-black for subheadings.
+- **Body:** A clean, modern sans-serif in the spirit of Acrom. Use `DM Sans` or `Inter` (Google Fonts) — regular weight for body text, medium for subheads and navigation.
+- **Accent text:** Spaced uppercase sans-serif for labels and category tags (e.g., "MENOPAUSE · HORMONES · WELLNESS").
+
+**Design language:**
+- Generous white space — let the content breathe
+- Rounded corners (`1.5rem` to `2rem`) on all cards and containers
+- Subtle CSS noise texture overlay at ~0.03 opacity to add warmth and eliminate flat-digital feel
+- Photography-forward: her headshot and hero imagery should be large and prominent
+- Use the logo files from `site-assets/logos/` — the magenta PNG version for light backgrounds, the white version for dark/magenta backgrounds
+
+---
+
+### 3. Site Architecture
+
+**Single-page scrolling homepage** with defined sections, plus anchor navigation. Each section should feel like a distinct chapter in her story.
+
+#### Section 1: Hero — "The Opening Statement"
+- Full-width hero with her professional headshot (`site-assets/images/headshots/Soma-Mandal-MD.jpg`)
+- Headline: Something in the spirit of "Helping Women Uplevel Through Midlife" (her brand tagline)
+- Subhead establishing her triple credibility: Board-Certified Physician · Bestselling Author · Media Health Expert
+- Two CTAs: "Watch Soma Says" (scrolls to video section) and "Book Dr. Mandal" (scrolls to speaking/media section)
+- "As Seen In" logo bar beneath the hero — featuring logos/names of: The Washington Post, NBC, ABC, PBS NewsHour, Insider, Good Day New York, and other major outlets from her media kit
+
+#### Section 2: About — "The Story"
+- Use the bio from the brand book (page 16) as the foundation — she's a board-certified Internist, NYU School of Medicine MD, Oxford University research fellow, who has helped thousands of women navigate menopause
+- Emphasize her unique differentiator: fusing traditional Western medicine with Eastern roots
+- Include her key credentials: Medical Director of Women's Health at Hackensack Meridian Health, Castle Connolly Top Doctor (10 consecutive years), NJ Top Docs, NY Mag Best Doctors
+- Photo alongside text (use the hero imagery from the brand book)
+
+#### Section 3: The Books — "The Library"
+Two book cards side by side (stacking on mobile):
+
+**Book 1: "Dear Menopause, I Do Not Fear You!"**
+- Cover image: `site-assets/images/book-covers/dear-menopause-cover.jpg`
+- Subtitle: "A Modern Woman's Guide to Thriving Through Midlife"
+- Brief description + "Buy on Amazon" button
+- Pull 2-3 of the strongest patient/reader quotes from `site-assets/documents/mandal reviews.docx`
+
+**Book 2: "Midlife Masala"**
+- Cover image: `site-assets/images/book-covers/midlife-masala-cover.webp`
+- Position this as her newest book, speaking specifically to South Asian women navigating midlife
+- "Buy on Amazon" button
+- If review quotes are available, include them
+
+#### Section 4: Soma Says — "The Video Hub"
+- Featured video: Embed the most-viewed or most recent YouTube video prominently at top
+- Below: A filterable/tabbed gallery of her YouTube content organized by category:
+  - **Menopause & Hormones** (hot flashes, HRT, perimenopause)
+  - **Mind & Body** (anxiety, sleep, nervous system — her strongest-performing category)
+  - **Nutrition & Weight** (menopause weight gain, diet)
+  - **Beauty & Aging** (skin, hair loss)
+  - **Ask Dr. Mandal** (Q&A format episodes)
+- Use the actual video data from `site-assets/youtube-catalog.md` — real titles, real YouTube IDs
+- Each video card shows: thumbnail, title, and category tag
+- Lazy-load all YouTube embeds (use `loading="lazy"` on iframes or a click-to-play pattern) to preserve page speed
+- "Subscribe on YouTube" CTA button linking to her channel
+
+#### Section 5: Blog — "The Reading Room"
+- Grid of blog post cards using the 10 articles from `site-assets/Blog/`
+- Each card: title, brief excerpt (first ~20 words), and a "Read More" link
+- Blog topics include: hot flashes, sleep, anxiety, HRT, skin health, birth control in menopause, and the "menopause muffin top"
+
+#### Section 6: Speaking & Media — "The One-Sheet"
+- Professional speaker section designed for event planners and producers
+- Her speaking topics (from the media kit): Menopause Myths, Women's Health After 40, Hormone Therapy Demystified, East Meets West in Medicine, Midlife Reinvention
+- Key stats: 178+ media features, 55+ video episodes, 2 published books
+- Headshot + brief speaker bio
+- "Book Dr. Mandal for Your Event" CTA → mailto link or contact form anchor
+- "Download Media Kit" button linking to the PDF
+
+#### Section 7: Testimonials — "What Women Are Saying"
+- Rotating or scrolling carousel of patient/reader testimonials from `site-assets/documents/mandal reviews.docx`
+- Warm, personal design — large quote marks in magenta, patient first name only
+
+#### Section 8: Footer
+- Logo (white version on dark/magenta background)
+- Social links: YouTube, Instagram, Facebook, Twitter/X
+- "Clinical Practice" link → her Hackensack Meridian Health practice page
+- Contact email: DrSoma@DrSomaMandal.com
+- Copyright notice
+- Newsletter signup: simple email capture with a compelling hook (e.g., "Get Dr. Mandal's weekly midlife health tips")
+
+---
+
+### 4. Navbar — "The Floating Island"
+
+A fixed, pill-shaped navigation bar, horizontally centered at the top of the viewport.
+
+- **At page top (hero visible):** Transparent background, white text, blending into the hero
+- **On scroll (past hero):** Transitions to frosted glass effect (semi-transparent white/blush background with `backdrop-filter: blur(12px)`), magenta text, subtle border
+- **Contents:** Logo text ("Dr. Soma Mandal"), nav links (About, Books, Soma Says, Speaking), and a magenta CTA button ("Book Dr. Mandal")
+- **Mobile:** Collapses to logo + hamburger menu
+- Use `IntersectionObserver` on the hero section to trigger the morph — no external libraries
+
+---
+
+### 5. Micro-Interactions & Polish
+
+- **Buttons:** Subtle scale-up on hover (`transform: scale(1.03)`) with smooth easing (`cubic-bezier(0.25, 0.46, 0.45, 0.94)`). Magenta buttons use a sliding background fill effect on hover.
+- **Cards:** Gentle lift on hover (`translateY(-3px)` + soft shadow increase)
+- **Links:** `translateY(-1px)` lift with color transition to magenta on hover
+- **Scroll animations:** Sections fade-in-up on scroll using `IntersectionObserver` — no GSAP dependency. Keep it subtle and fast (300-400ms).
+- **Video cards:** Click-to-play pattern — show thumbnail with a centered play button overlay; clicking replaces the thumbnail with the YouTube iframe. This dramatically improves initial page load.
+
+---
+
+### 6. Asset Reference
+
+All assets are located in `site-assets/`:
+- `logos/` — brand logo in PNG (color + white), JPG, PDF, and favicon versions
+- `images/headshots/Soma-Mandal-MD.jpg` — primary headshot (high-res)
+- `images/hero/hero-homepage.jpg` — hero background image
+- `images/book-covers/` — both book cover images
+- `logos/podcast-logo-soma-says.png` — Soma Says podcast branding
+- `documents/mandal reviews.docx` — patient and reader testimonials
+- `documents/DrSomaMandal-MediaKit.pdf` — downloadable media kit
+- `youtube-catalog.md` — complete YouTube video catalog with titles, IDs, view counts, and categories
+- `Blog/` — 10 blog post .docx files ready for content extraction
+- `documents/soma brand book.pdf` — the full 21-page brand guidelines (READ THIS FIRST)
+
+---
+
+### 7. Quality Checklist
+
+Before delivering, verify:
+- [ ] Brand book colors are used correctly — magenta headlines, off-black body text, warm backgrounds
+- [ ] All images reference actual files from the asset folder
+- [ ] YouTube embeds use real video IDs from the catalog
+- [ ] Page loads fast — all videos lazy-load or use click-to-play
+- [ ] Fully responsive — test at 375px (mobile), 768px (tablet), 1440px (desktop)
+- [ ] Navbar morph works smoothly on scroll
+- [ ] Every CTA button is functional (links, mailto, or anchors)
+- [ ] No placeholder text anywhere — all content is real
+- [ ] The site feels warm, authoritative, and distinctly "her" — not generic

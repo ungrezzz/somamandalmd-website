@@ -1,0 +1,14 @@
+# Squarespace deployment zip (superseded by Vercel)
+*.zip
+
+# Temp/unknown files
+ziohItQW
+preview_index.html
+
+# macOS
+.DS_Store
+
+# Claude internal
+.skills/
+.local-plugins/
+.auto-memory/
