@@ -1235,100 +1235,11 @@
       <p style="max-width: 600px; margin: 0 auto 2rem; color: #6B6B6B;">Evidence-based conversations on menopause, hormones, mind-body healing, and everything midlife — hosted by Dr. Soma Mandal.</p>
     </div>
 
-    <!-- Featured Video -->
-    <div class="video-featured reveal">
-      <div class="video-featured-player" id="featuredVideo" data-id="jqn7LdbdwJ8" onclick="playFeatured(this)">
-        <img src="https://img.youtube.com/vi/jqn7LdbdwJ8/maxresdefault.jpg" alt="Acupuncture Releases Serotonin & Dopamine: Here's How" loading="lazy">
-        <div class="play-overlay"><div class="play-btn"></div></div>
-      </div>
-      <div class="video-featured-info">
-        <span class="section-label">Featured Episode</span>
-        <h3>Acupuncture Releases Serotonin & Dopamine: Here's How</h3>
-        <p>Dr. Mandal's latest episode — exploring how acupuncture triggers serotonin and dopamine release, and what that means for midlife women seeking natural approaches to wellness.</p>
-        <div style="margin-top: 1rem; display: flex; gap: 0.75rem; flex-wrap: wrap;">
-          <a href="https://www.youtube.com/watch?v=jqn7LdbdwJ8" target="_blank" rel="noopener" class="btn btn-white" style="font-size: 0.85rem; padding: 0.6rem 1.25rem;">Watch on YouTube</a>
-          <a href="https://www.youtube.com/@SomaSays" target="_blank" rel="noopener" class="btn btn-white" style="font-size: 0.85rem; padding: 0.6rem 1.25rem;">Subscribe on YouTube</a>
-        </div>
-      </div>
-    </div>
+    <!-- Featured Video (rendered from data/videos.json) -->
+    <div id="featuredVideoContainer" class="video-featured reveal"></div>
 
-    <!-- Video Grid (no tabs) -->
-    <div class="video-grid" id="videoGrid" style="margin-top: 3rem;">
-
-
-      <div class="video-card" onclick="playVideo(this, 'iAGQMdAXy74')">
-        <div class="video-card-thumb">
-          <img src="https://img.youtube.com/vi/iAGQMdAXy74/mqdefault.jpg" alt="Is Modern Plastic Surgery Actually About Aging Well?" loading="lazy">
-          <div class="play-overlay-sm"><div class="play-btn-sm"></div></div>
-        </div>
-        <div class="video-card-info">
-          <div class="video-card-cat">Health</div>
-          <div class="video-card-title">Is Modern Plastic Surgery Actually About Aging Well?</div>
-          <div class="video-card-views">5.5K views</div>
-        </div>
-      </div>
-
-      <div class="video-card" onclick="playVideo(this, '3AO4GiD8el8')">
-        <div class="video-card-thumb">
-          <img src="https://img.youtube.com/vi/3AO4GiD8el8/mqdefault.jpg" alt="What Doctors Miss About Women's Hormones and Fatigue" loading="lazy">
-          <div class="play-overlay-sm"><div class="play-btn-sm"></div></div>
-        </div>
-        <div class="video-card-info">
-          <div class="video-card-cat">Health</div>
-          <div class="video-card-title">What Doctors Miss About Women's Hormones and Fatigue</div>
-          <div class="video-card-views">9.9K views</div>
-        </div>
-      </div>
-
-      <div class="video-card" onclick="playVideo(this, '1J3VClQcBzg')">
-        <div class="video-card-thumb">
-          <img src="https://img.youtube.com/vi/1J3VClQcBzg/mqdefault.jpg" alt="Your Nervous System Is Dysregulated" loading="lazy">
-          <div class="play-overlay-sm"><div class="play-btn-sm"></div></div>
-        </div>
-        <div class="video-card-info">
-          <div class="video-card-cat">Mind & Body</div>
-          <div class="video-card-title">Your Nervous System Is Dysregulated and You Don't Even Know It</div>
-          <div class="video-card-views">15K views</div>
-        </div>
-      </div>
-
-      <div class="video-card" onclick="playVideo(this, 'HUblm4pWK6E')">
-        <div class="video-card-thumb">
-          <img src="https://img.youtube.com/vi/HUblm4pWK6E/mqdefault.jpg" alt="Women Burning Out?" loading="lazy">
-          <div class="play-overlay-sm"><div class="play-btn-sm"></div></div>
-        </div>
-        <div class="video-card-info">
-          <div class="video-card-cat">Mind & Body</div>
-          <div class="video-card-title">Women Burning Out? Your Soul Blueprint Has the Answer</div>
-          <div class="video-card-views">6.8K views</div>
-        </div>
-      </div>
-
-      <div class="video-card" onclick="playVideo(this, '7Q64ERq6R5Y')">
-        <div class="video-card-thumb">
-          <img src="https://img.youtube.com/vi/7Q64ERq6R5Y/mqdefault.jpg" alt="Food Guilt, Body Shame, and Unrealistic Standards" loading="lazy">
-          <div class="play-overlay-sm"><div class="play-btn-sm"></div></div>
-        </div>
-        <div class="video-card-info">
-          <div class="video-card-cat">Body Image</div>
-          <div class="video-card-title">Food Guilt, Body Shame, and Unrealistic Standards: A Woman's Reality</div>
-          <div class="video-card-views">13K views</div>
-        </div>
-      </div>
-
-      <div class="video-card" onclick="playVideo(this, '0EDaJL8q898')">
-        <div class="video-card-thumb">
-          <img src="https://img.youtube.com/vi/0EDaJL8q898/mqdefault.jpg" alt="Trauma Isn't Just in Your Head" loading="lazy">
-          <div class="play-overlay-sm"><div class="play-btn-sm"></div></div>
-        </div>
-        <div class="video-card-info">
-          <div class="video-card-cat">Mind & Body</div>
-          <div class="video-card-title">Trauma Isn't Just in Your Head — It's Trapped in Your Body</div>
-          <div class="video-card-views">15K views</div>
-        </div>
-      </div>
-
-    </div>
+    <!-- Video Grid (rendered from data/videos.json) -->
+    <div class="video-grid" id="videoGrid" style="margin-top: 3rem;"></div>
 
     <div class="video-cta-row reveal">
       <a href="https://www.youtube.com/@SomaSays" target="_blank" rel="noopener" class="btn btn-outline">See All Episodes on YouTube</a>
@@ -1666,6 +1577,49 @@
   function playVideo(card, videoId) {
     window.open('https://www.youtube.com/watch?v=' + videoId, '_blank');
   }
+
+  // Load videos from data/videos.json and render the Soma Says section
+  (function loadVideos() {
+    fetch('data/videos.json')
+      .then(function(r) { return r.json(); })
+      .then(function(data) {
+        var f = data.featured;
+        var featuredEl = document.getElementById('featuredVideoContainer');
+        if (featuredEl && f) {
+          featuredEl.innerHTML =
+            '<div class="video-featured-player" id="featuredVideo" data-id="' + f.id + '" onclick="playFeatured(this)">' +
+              '<img src="https://img.youtube.com/vi/' + f.id + '/maxresdefault.jpg" alt="' + f.title.replace(/"/g, '&quot;') + '" loading="lazy">' +
+              '<div class="play-overlay"><div class="play-btn"></div></div>' +
+            '</div>' +
+            '<div class="video-featured-info">' +
+              '<span class="section-label">Featured Episode</span>' +
+              '<h3>' + f.title + '</h3>' +
+              '<p>' + f.description + '</p>' +
+              '<div style="margin-top: 1rem; display: flex; gap: 0.75rem; flex-wrap: wrap;">' +
+                '<a href="https://www.youtube.com/watch?v=' + f.id + '" target="_blank" rel="noopener" class="btn btn-white" style="font-size: 0.85rem; padding: 0.6rem 1.25rem;">Watch on YouTube</a>' +
+                '<a href="https://www.youtube.com/@SomaSays" target="_blank" rel="noopener" class="btn btn-white" style="font-size: 0.85rem; padding: 0.6rem 1.25rem;">Subscribe on YouTube</a>' +
+              '</div>' +
+            '</div>';
+        }
+        var gridEl = document.getElementById('videoGrid');
+        if (gridEl && data.grid) {
+          gridEl.innerHTML = data.grid.map(function(v) {
+            return '<div class="video-card" onclick="playVideo(this, \'' + v.id + '\')">' +
+              '<div class="video-card-thumb">' +
+                '<img src="https://img.youtube.com/vi/' + v.id + '/mqdefault.jpg" alt="' + v.title.replace(/"/g, '&quot;') + '" loading="lazy">' +
+                '<div class="play-overlay-sm"><div class="play-btn-sm"></div></div>' +
+              '</div>' +
+              '<div class="video-card-info">' +
+                '<div class="video-card-cat">' + v.category + '</div>' +
+                '<div class="video-card-title">' + v.title + '</div>' +
+                '<div class="video-card-views">' + v.views + ' views</div>' +
+              '</div>' +
+            '</div>';
+          }).join('');
+        }
+      })
+      .catch(function(err) { console.warn('Could not load videos.json:', err); });
+  })();
 
   // Smooth scroll for anchor links
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
