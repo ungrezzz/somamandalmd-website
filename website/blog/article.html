@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-B7932NY0NF"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-B7932NY0NF');</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="page-title">Loading… — Dr. Soma Mandal, MD</title>
+  <meta name="description" id="meta-description" content="">
+  <meta property="og:title" id="og-title" content="">
+  <meta property="og:description" id="og-description" content="">
+  <meta property="og:type" content="article">
+  <meta property="og:image" id="og-image" content="">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" id="canonical" href="https://www.somamandalmd.com/blog">
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/logos/favicon96x96.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/logos/favicon180x180.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    html{scroll-behavior:smooth;}
+    body{font-family:'DM Sans',-apple-system,sans-serif;background:#FAF8F6;color:#333;line-height:1.7;}
+    header{position:sticky;top:0;z-index:100;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,0.08);}
+    .header-container{max-width:900px;margin:0 auto;padding:0.9rem 2rem;display:flex;justify-content:space-between;align-items:center;}
+    .header-left{display:flex;align-items:center;gap:0.75rem;}
+    .header-headshot{width:38px;height:38px;border-radius:50%;overflow:hidden;flex-shrink:0;background:#FFF5F7;}
+    .header-headshot img{width:100%;height:100%;object-fit:cover;}
+    .header-name{font-family:'Playfair Display',serif;font-size:1rem;font-weight:700;color:#333;}
+    .header-back{color:#E75294;text-decoration:none;font-size:0.875rem;font-weight:500;}
+    .header-back:hover{opacity:0.75;}
+    .article-hero{width:100%;max-height:420px;overflow:hidden;}
+    .article-hero img{width:100%;height:420px;object-fit:cover;display:block;}
+    .article-wrapper{max-width:740px;margin:0 auto;padding:3rem 2rem 5rem;}
+    .article-date{font-size:0.8rem;color:#999;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:0.75rem;}
+    h1{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,4vw,2.6rem);font-weight:700;line-height:1.2;color:#1a1a1a;margin-bottom:0.75rem;}
+    .article-meta{font-size:0.9rem;color:#999;margin-bottom:2.5rem;padding-bottom:2rem;border-bottom:1px solid #eee;}
+    .article-body p{font-size:1.05rem;color:#444;margin-bottom:1.4rem;line-height:1.8;}
+    .article-body p strong{color:#222;}
+    .article-nav{display:flex;justify-content:space-between;align-items:center;gap:1rem;margin-top:3rem;padding-top:2rem;border-top:1px solid #eee;flex-wrap:wrap;}
+    .article-nav a{color:#E75294;text-decoration:none;font-size:0.9rem;font-weight:500;max-width:45%;}
+    .article-nav a:hover{opacity:0.75;}
+    .article-nav a.prev::before{content:"← ";}
+    .article-nav a.next::after{content:" →";}
+    .article-nav a.all{color:#888;max-width:none;}
+    footer{background:#1a1a1a;color:#aaa;text-align:center;padding:2rem;font-size:0.85rem;}
+    footer a{color:#E75294;text-decoration:none;}
+    .loading{max-width:740px;margin:6rem auto;padding:2rem;text-align:center;color:#999;}
+    @media(max-width:600px){.article-wrapper{padding:2rem 1.25rem 4rem;}.header-name{display:none;}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="header-left">
+        <div class="header-headshot"><img src="/assets/images/headshots/head-shot -- round.png" alt="Dr. Soma Mandal"></div>
+        <span class="header-name">Dr. Soma Mandal</span>
+        <a href="/blog" class="header-back">← All Articles</a>
+      </div>
+      <img src="/assets/logos/logo-primary.png" alt="Dr. Soma Mandal Logo" style="max-height:36px;">
+    </div>
+  </header>
+  <div id="article-hero" class="article-hero" style="display:none;"><img id="hero-img" src="" alt=""></div>
+  <div id="loading" class="loading">Loading article…</div>
+  <div id="article-wrapper" class="article-wrapper" style="display:none;">
+    <p id="article-date" class="article-date"></p>
+    <h1 id="article-title"></h1>
+    <p class="article-meta">By Dr. Soma Mandal, MD</p>
+    <div id="article-body" class="article-body"></div>
+    <nav id="article-nav" class="article-nav"></nav>
+  </div>
+  <footer><p>&copy; 2026 Dr. Soma Mandal, MD &nbsp;|&nbsp; <a href="/">somamandalmd.com</a></p></footer>
+  <script>
+    (async function(){
+      const path=window.location.pathname;
+      const parts=path.split('/').filter(Boolean);
+      let slug=parts[parts.length-1];
+      if(slug==='article'||slug==='blog')slug=new URLSearchParams(window.location.search).get('slug');
+      if(!slug){showError('No article specified.');return;}
+      let articles;
+      try{const res=await fetch('/data/articles.json');articles=await res.json();}
+      catch(e){showError('Could not load articles.');return;}
+      const idx=articles.findIndex(a=>a.slug===slug);
+      if(idx===-1){showError('Article not found.');return;}
+      const article=articles[idx];
+      document.getElementById('page-title').textContent=article.title+' — Dr. Soma Mandal, MD';
+      document.getElementById('meta-description').content=article.excerpt;
+      document.getElementById('og-title').content=article.title;
+      document.getElementById('og-description').content=article.excerpt;
+      document.getElementById('og-image').content='https://www.somamandalmd.com/'+article.image;
+      document.getElementById('canonical').href='https://www.somamandalmd.com/blog/'+article.slug;
+      if(article.image){const h=document.getElementById('hero-img');h.src='/'+article.image;h.alt=article.imageAlt||article.title;document.getElementById('article-hero').style.display='block';}
+      const d=new Date(article.date+'T12:00:00');
+      document.getElementById('article-date').textContent=d.toLocaleDateString('en-US',{year:'numeric',month:'long',day:'numeric'});
+      document.getElementById('article-title').textContent=article.title;
+      document.getElementById('article-body').innerHTML=article.content;
+      const nav=document.getElementById('article-nav');
+      const newer=idx>0?articles[idx-1]:null;
+      const older=idx<articles.length-1?articles[idx+1]:null;
+      let navHTML='<a href="/blog" class="all">All Articles</a>';
+      if(newer)navHTML+='<a href="/blog/'+newer.slug+'" class="prev">'+newer.title+'</a>';
+      if(older)navHTML+='<a href="/blog/'+older.slug+'" class="next">'+older.title+'</a>';
+      nav.innerHTML=navHTML;
+      document.getElementById('loading').style.display='none';
+      document.getElementById('article-wrapper').style.display='block';
+    })();
+    function showError(msg){document.getElementById('loading').innerHTML='<p style="color:#c00">'+msg+'</p><p style="margin-top:1rem"><a href="/blog" style="color:#E75294">← Back to all articles</a></p>';}
+  </script>
+</body>
+</html>
