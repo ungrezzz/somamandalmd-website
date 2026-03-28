@@ -64,7 +64,7 @@
     ],
     "sameAs": [
       "https://www.instagram.com/somasaysmd",
-      "https://www.linkedin.com/in/soma-mandal-md",
+      "https://www.linkedin.com/in/somamandal/",
       "https://www.facebook.com/SomaSaysMD",
       "https://twitter.com/SomaSaysMD",
       "https://www.youtube.com/@SomaSays"
@@ -244,7 +244,7 @@
       width: 24px;
       height: 24px;
       border-radius: 50%;
-      color: #999;
+      color: #666;
       transition: color 0.3s ease;
     }
     .nav-social a:hover { color: #E75294; }
@@ -941,43 +941,6 @@
       100% { transform: translateX(-50%); }
     }
 
-    /* ===== NEWSLETTER ===== */
-    .newsletter-section {
-      background: #1a1a1a;
-      padding: 4rem 0;
-    }
-    .newsletter-inner {
-      text-align: center;
-      max-width: 550px;
-      margin: 0 auto;
-    }
-    .newsletter-inner h3 { color: #fff; margin-bottom: 0.75rem; }
-    .newsletter-inner p { color: rgba(255,255,255,0.6); margin-bottom: 1.5rem; font-size: 0.95rem; }
-    .newsletter-form {
-      display: flex;
-      gap: 0.75rem;
-      justify-content: center;
-    }
-    .newsletter-form input {
-      flex: 1;
-      padding: 0.875rem 1.25rem;
-      border-radius: 1.5rem;
-      border: 1px solid rgba(255,255,255,0.15);
-      background: rgba(255,255,255,0.08);
-      color: #fff;
-      font-family: 'DM Sans', sans-serif;
-      font-size: 0.95rem;
-      outline: none;
-      transition: border-color 0.3s ease;
-      max-width: 320px;
-    }
-    .newsletter-form input::placeholder { color: rgba(255,255,255,0.4); }
-    .newsletter-form input:focus { border-color: #E75294; }
-    @media (max-width: 500px) {
-      .newsletter-form { flex-direction: column; align-items: center; }
-      .newsletter-form input { max-width: 100%; width: 100%; }
-    }
-
     /* ===== FOOTER ===== */
     .footer {
       background: #1a1a1a;
@@ -1184,7 +1147,7 @@
       </div>
     </div>
     <div class="hero-image">
-      <img src="assets/images/headshots/head-shot -- round.png" alt="Dr. Soma Mandal, MD &mdash; Midlife Women's Health Expert" loading="eager">
+      <img src="assets/images/headshots/head-shot-round.png" alt="Dr. Soma Mandal, MD &mdash; Midlife Women's Health Expert" loading="eager">
     </div>
   </div>
 </section>
@@ -1273,7 +1236,7 @@
         </div>
       </div>
       <div class="book-card reveal">
-        <img src="assets/images/book-covers/midlife-masala -cover.webp" alt="Midlife Masala book cover" loading="lazy">
+        <img src="assets/images/book-covers/midlife-masala-cover.webp" alt="Midlife Masala book cover" loading="lazy">
         <h3 class="accent">Midlife Masala</h3>
         <p class="book-subtitle">Menopause, Mindset &amp; Magic After 40 &mdash; For South Asian Women</p>
         <p class="book-desc">Dr. Mandal's newest book speaks directly to South Asian women navigating perimenopause and menopause &mdash; blending evidence-based medicine with cultural understanding to address the unique challenges women of color face during midlife.</p>
@@ -1405,7 +1368,7 @@
   <div class="container">
     <div class="speaking-grid reveal">
       <div class="speaking-photo">
-        <img src="assets/images/headshots/head-shot -- round.png" alt="Dr. Soma Mandal &mdash; Speaker" loading="lazy">
+        <img src="assets/images/headshots/head-shot-round.png" alt="Dr. Soma Mandal &mdash; Speaker" loading="lazy">
       </div>
       <div class="speaking-content">
         <span class="section-label">Speaking &amp; Media</span>
@@ -1528,20 +1491,6 @@
     </div>
   </div>
 </section>
-
-<!-- ===== NEWSLETTER ===== -->
-<div class="newsletter-section">
-  <div class="container">
-    <div class="newsletter-inner">
-      <h3 style="font-family: 'Playfair Display', serif;">Stay in the Know</h3>
-      <p>Get Dr. Mandal's weekly midlife health tips, new episode alerts, and exclusive content &mdash; delivered to your inbox.</p>
-      <form class="newsletter-form" onsubmit="event.preventDefault(); this.querySelector('button').textContent='Subscribed!'; this.querySelector('input').value='';">
-        <input type="email" placeholder="Your email address" required>
-        <button type="submit" class="btn btn-primary">Subscribe</button>
-      </form>
-    </div>
-  </div>
-</div>
 
 <!-- ===== FOOTER ===== -->
 <footer class="footer">
