@@ -59,6 +59,11 @@
       font-family: 'Playfair Display', serif;
       font-size: 1.1rem; font-weight: 700; color: #333;
     }
+    .header-home-link {
+      display: flex; align-items: center; gap: 1rem;
+      text-decoration: none; color: inherit;
+    }
+    .header-home-link:hover .header-text { color: #E75294; }
     .header-back {
       color: #E75294; text-decoration: none;
       font-size: 0.9rem; margin-left: 0.5rem;
@@ -139,6 +144,9 @@
       transform: translateY(-2px);
       box-shadow: 0 6px 24px rgba(0,0,0,0.1);
     }
+    .card-link {
+      display: block; text-decoration: none; color: inherit; cursor: pointer;
+    }
     .card-image {
       height: 260px; overflow: hidden; flex-shrink: 0;
     }
@@ -167,9 +175,7 @@
     .card-read-more:hover { background: #c9347a; transform: translateY(-1px); }
 
     /* ===== FEATURED ARTICLE (first card) ===== */
-    .article-card.featured { flex-direction: row; }
-    .article-card.featured .card-image { height: auto; width: 42%; min-height: 300px; }
-    .article-card.featured .card-body { display: flex; flex-direction: column; justify-content: center; }
+    .article-card.featured .card-image { height: 340px; }
     .article-card.featured .card-title { font-size: 2rem; }
     .featured-badge {
       display: inline-block;
@@ -190,8 +196,7 @@
     /* ===== RESPONSIVE ===== */
     @media (max-width: 768px) {
       .blog-hero h1 { font-size: 2rem; }
-      .article-card.featured { flex-direction: column; }
-      .article-card.featured .card-image { width: 100%; height: 220px; }
+      .article-card.featured .card-image { height: 220px; }
       .card-body { padding: 1.5rem; }
       .header-container { padding: 1rem; }
       main { padding: 1.5rem 1rem 3rem; }
@@ -205,10 +210,12 @@
   <header>
     <div class="header-container">
       <div class="header-left">
-        <div class="header-headshot">
-          <img src="assets/images/headshots/head-shot -- round.png" alt="Dr. Soma Mandal">
-        </div>
-        <span class="header-text">Dr. Soma Mandal</span>
+        <a href="/" class="header-home-link">
+          <div class="header-headshot">
+            <img src="assets/images/headshots/head-shot -- round.png" alt="Dr. Soma Mandal">
+          </div>
+          <span class="header-text">Dr. Soma Mandal</span>
+        </a>
         <a href="/" class="header-back">← Back to Home</a>
       </div>
       <div class="header-logo">
@@ -284,17 +291,21 @@
 
         const badgeHTML = i === 0 ? '<span class="featured-badge">Latest Article</span>' : '';
 
+        var articleUrl = '/blog/' + article.slug;
+
         card.innerHTML =
-          '<div class="card-image">' +
-            '<img src="/' + article.image + '" alt="' + escapeAttr(article.imageAlt || article.title) + '" loading="' + (i === 0 ? 'eager' : 'lazy') + '">' +
-          '</div>' +
-          '<div class="card-body">' +
-            badgeHTML +
-            '<p class="card-date">' + dateStr + '</p>' +
-            '<h2 class="card-title">' + escapeHTML(article.title) + '</h2>' +
-            '<p class="card-excerpt">' + escapeHTML(article.excerpt) + '</p>' +
-            '<a href="/blog/' + article.slug + '" class="card-read-more">Read Article →</a>' +
-          '</div>';
+          '<a href="' + articleUrl + '" class="card-link">' +
+            '<div class="card-image">' +
+              '<img src="/' + article.image + '" alt="' + escapeAttr(article.imageAlt || article.title) + '" loading="' + (i === 0 ? 'eager' : 'lazy') + '">' +
+            '</div>' +
+            '<div class="card-body">' +
+              badgeHTML +
+              '<p class="card-date">' + dateStr + '</p>' +
+              '<h2 class="card-title">' + escapeHTML(article.title) + '</h2>' +
+              '<p class="card-excerpt">' + escapeHTML(article.excerpt) + '</p>' +
+              '<span class="card-read-more">Read Article &rarr;</span>' +
+            '</div>' +
+          '</a>';
 
         main.appendChild(card);
       });
