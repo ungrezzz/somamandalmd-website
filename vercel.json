@@ -4,6 +4,6 @@
   "trailingSlash": false,
   "rewrites": [
     { "source": "/blog", "destination": "/blog.html" },
-    { "source": "/blog/:slug", "destination": "/blog/article.html" }
+    { "source": "/blog/:slug", "destination": "/blog-article.html" }
   ]
 }

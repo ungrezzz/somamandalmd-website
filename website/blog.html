@@ -11,16 +11,16 @@
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blog — Dr. Soma Mandal, MD | Women’s Health &amp; Menopause</title>
-  <meta name="description" content="Evidence-based articles on menopause, perimenopause, hormone therapy, hot flashes, sleep, anxiety, and midlife women’s health — by board-certified internist Dr. Soma Mandal.">
-  <meta name="keywords" content="menopause blog, perimenopause symptoms, hormone therapy, hot flashes, women’s health, Dr. Soma Mandal, midlife health, menopause myths">
-  <meta property="og:title" content="Blog — Dr. Soma Mandal, MD | Women’s Health &amp; Menopause">
-  <meta property="og:description" content="Evidence-based articles on menopause, perimenopause, hormone therapy, sleep, and midlife women’s health by board-certified internist Dr. Soma Mandal.">
+  <title>Blog &mdash; Dr. Soma Mandal, MD | Women's Health &amp; Menopause</title>
+  <meta name="description" content="Evidence-based articles on menopause, perimenopause, hormone therapy, hot flashes, sleep, anxiety, and midlife women's health &mdash; by board-certified internist Dr. Soma Mandal.">
+  <meta name="keywords" content="menopause blog, perimenopause symptoms, hormone therapy, hot flashes, women's health, Dr. Soma Mandal, midlife health, menopause myths">
+  <meta property="og:title" content="Blog &mdash; Dr. Soma Mandal, MD | Women's Health &amp; Menopause">
+  <meta property="og:description" content="Evidence-based articles on menopause, perimenopause, hormone therapy, sleep, and midlife women's health by board-certified internist Dr. Soma Mandal.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.somamandalmd.com/blog">
   <meta property="og:image" content="https://www.somamandalmd.com/assets/images/headshots/Soma-Mandal-MD.jpg">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Blog — Dr. Soma Mandal, MD | Women’s Health &amp; Menopause">
+  <meta name="twitter:title" content="Blog &mdash; Dr. Soma Mandal, MD | Women's Health &amp; Menopause">
   <meta name="twitter:description" content="Evidence-based articles on menopause, perimenopause, hormone therapy, and midlife health by Dr. Soma Mandal.">
   <link rel="canonical" href="https://www.somamandalmd.com/blog">
   <link rel="icon" type="image/png" sizes="96x96" href="assets/logos/favicon96x96.png">
@@ -31,54 +31,163 @@
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
-    body { font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif; background: #FAF8F6; color: #333; line-height: 1.6; }
-    header { position: sticky; top: 0; z-index: 100; background: #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
-    .header-container { max-width: 1200px; margin: 0 auto; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; }
+    body {
+      font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #FAF8F6;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* ===== HEADER ===== */
+    header {
+      position: sticky; top: 0; z-index: 100;
+      background: #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    .header-container {
+      max-width: 1200px; margin: 0 auto;
+      padding: 1rem 2rem;
+      display: flex; justify-content: space-between; align-items: center;
+    }
     .header-left { display: flex; align-items: center; gap: 1rem; }
-    .header-headshot { width: 40px; height: 40px; border-radius: 50%; background: #FFF5F7; overflow: hidden; flex-shrink: 0; }
+    .header-headshot {
+      width: 40px; height: 40px; border-radius: 50%;
+      background: #FFF5F7; overflow: hidden; flex-shrink: 0;
+    }
     .header-headshot img { width: 100%; height: 100%; object-fit: cover; }
-    .header-text { font-family: 'Playfair Display', serif; font-size: 1.1rem; font-weight: 700; color: #333; }
-    .header-back { color: #E75294; text-decoration: none; font-size: 0.9rem; margin-left: 0.5rem; }
+    .header-text {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem; font-weight: 700; color: #333;
+    }
+    .header-back {
+      color: #E75294; text-decoration: none;
+      font-size: 0.9rem; margin-left: 0.5rem;
+    }
     .header-back:hover { text-decoration: underline; }
     .header-logo img { height: 45px; width: auto; }
-    .blog-hero { background: linear-gradient(160deg, #1a1a1a 0%, #2d1f28 50%, #4a2039 100%); padding: 4.5rem 2rem 4rem; text-align: center; position: relative; overflow: hidden; }
-    .blog-hero::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at 30% 80%, rgba(231,82,148,0.15), transparent 60%), radial-gradient(ellipse at 70% 20%, rgba(231,82,148,0.08), transparent 50%); pointer-events: none; }
+
+    /* ===== HERO ===== */
+    .blog-hero {
+      background: linear-gradient(160deg, #1a1a1a 0%, #2d1f28 50%, #4a2039 100%);
+      padding: 4.5rem 2rem 4rem;
+      text-align: center; position: relative; overflow: hidden;
+    }
+    .blog-hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: radial-gradient(ellipse at 30% 80%, rgba(231,82,148,0.15), transparent 60%),
+                  radial-gradient(ellipse at 70% 20%, rgba(231,82,148,0.08), transparent 50%);
+      pointer-events: none;
+    }
     .blog-hero-content { position: relative; z-index: 1; max-width: 680px; margin: 0 auto; }
-    .blog-hero-label { display: inline-block; font-size: 0.7rem; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; color: #E75294; margin-bottom: 1rem; padding: 0.4rem 1rem; border: 1px solid rgba(231,82,148,0.3); border-radius: 20px; }
-    .blog-hero h1 { font-family: 'Playfair Display', serif; font-size: 2.8rem; color: #fff; margin-bottom: 1.2rem; line-height: 1.15; }
+    .blog-hero-label {
+      display: inline-block; font-size: 0.7rem; font-weight: 600;
+      letter-spacing: 3px; text-transform: uppercase;
+      color: #E75294; margin-bottom: 1rem;
+      padding: 0.4rem 1rem;
+      border: 1px solid rgba(231,82,148,0.3); border-radius: 20px;
+    }
+    .blog-hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.8rem; color: #fff;
+      margin-bottom: 1.2rem; line-height: 1.15;
+    }
     .blog-hero h1 .accent { color: #E75294; }
-    .blog-hero p { font-size: 1.05rem; color: rgba(255,255,255,0.7); max-width: 520px; margin: 0 auto; line-height: 1.7; }
-    .blog-hero-rule { width: 50px; height: 2px; background: #E75294; margin: 1.5rem auto 0; border: none; border-radius: 1px; }
-    .toc-section { max-width: 900px; margin: 0 auto; padding: 2rem 2rem 1.5rem; }
-    .toc-header { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem; }
+    .blog-hero p {
+      font-size: 1.05rem; color: rgba(255,255,255,0.7);
+      max-width: 520px; margin: 0 auto; line-height: 1.7;
+    }
+    .blog-hero-rule {
+      width: 50px; height: 2px; background: #E75294;
+      margin: 1.5rem auto 0; border: none; border-radius: 1px;
+    }
+
+    /* ===== TABLE OF CONTENTS ===== */
+    .toc-section {
+      max-width: 900px; margin: 0 auto;
+      padding: 2rem 2rem 1.5rem;
+    }
+    .toc-header {
+      display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;
+    }
     .toc-header svg { width: 16px; height: 16px; color: #E75294; flex-shrink: 0; }
-    .toc-header span { font-size: 0.7rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: #999; }
+    .toc-header span {
+      font-size: 0.7rem; font-weight: 600; letter-spacing: 2px;
+      text-transform: uppercase; color: #999;
+    }
     .toc-list { display: flex; flex-wrap: wrap; gap: 0; list-style: none; }
     .toc-list li { position: relative; }
     .toc-list li:not(:last-child)::after { content: '·'; color: #ccc; padding: 0 0.5rem; font-weight: 700; }
-    .toc-link { color: #666; text-decoration: none; font-size: 0.88rem; transition: color 0.2s; line-height: 2; }
+    .toc-link {
+      color: #666; text-decoration: none;
+      font-size: 0.88rem; transition: color 0.2s; line-height: 2;
+    }
     .toc-link:hover { color: #E75294; }
     .toc-divider { max-width: 900px; margin: 0 auto; border: none; border-top: 1px solid #eee; }
+
+    /* ===== ARTICLE CARDS ===== */
     main { max-width: 900px; margin: 0 auto; padding: 2.5rem 2rem 4rem; }
-    .article-card { background: #fff; border-radius: 12px; margin-bottom: 2.5rem; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.06); display: flex; flex-direction: column; transition: transform 0.2s, box-shadow 0.2s; }
-    .article-card:hover { transform: translateY(-2px); box-shadow: 0 6px 24px rgba(0,0,0,0.1); }
-    .card-image { height: 260px; overflow: hidden; flex-shrink: 0; }
-    .card-image img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.4s; }
+
+    .article-card {
+      background: #fff; border-radius: 12px;
+      margin-bottom: 2.5rem; overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+      display: flex; flex-direction: column;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .article-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 24px rgba(0,0,0,0.1);
+    }
+    .card-image {
+      height: 260px; overflow: hidden; flex-shrink: 0;
+    }
+    .card-image img {
+      width: 100%; height: 100%; object-fit: cover; display: block;
+      transition: transform 0.4s;
+    }
     .article-card:hover .card-image img { transform: scale(1.03); }
     .card-body { padding: 2rem 2.5rem 2.5rem; }
-    .card-date { font-size: 0.75rem; color: #bbb; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.6rem; }
-    .card-title { font-family: 'Playfair Display', serif; font-size: 1.6rem; color: #222; margin-bottom: 0.75rem; line-height: 1.25; }
+    .card-date {
+      font-size: 0.75rem; color: #bbb; text-transform: uppercase;
+      letter-spacing: 0.08em; margin-bottom: 0.6rem;
+    }
+    .card-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.6rem; color: #222; margin-bottom: 0.75rem; line-height: 1.25;
+    }
     .card-excerpt { font-size: 0.97rem; color: #666; line-height: 1.7; margin-bottom: 1.5rem; }
-    .card-read-more { display: inline-block; background: #E75294; color: #fff; text-decoration: none; font-size: 0.875rem; font-weight: 600; padding: 0.55rem 1.5rem; border-radius: 50px; transition: background 0.2s, transform 0.2s; }
+    .card-read-more {
+      display: inline-block;
+      background: #E75294; color: #fff;
+      text-decoration: none; font-size: 0.875rem; font-weight: 600;
+      padding: 0.55rem 1.5rem; border-radius: 50px;
+      transition: background 0.2s, transform 0.2s;
+    }
     .card-read-more:hover { background: #c9347a; transform: translateY(-1px); }
+
+    /* ===== FEATURED ARTICLE (first card) ===== */
     .article-card.featured { flex-direction: row; }
     .article-card.featured .card-image { height: auto; width: 42%; min-height: 300px; }
     .article-card.featured .card-body { display: flex; flex-direction: column; justify-content: center; }
     .article-card.featured .card-title { font-size: 2rem; }
-    .featured-badge { display: inline-block; background: #FFF0F6; color: #E75294; font-size: 0.65rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.25rem 0.7rem; border-radius: 20px; border: 1px solid #fcc; margin-bottom: 0.75rem; }
-    footer { background: #333; color: #fff; padding: 2rem; text-align: center; font-size: 0.85rem; }
+    .featured-badge {
+      display: inline-block;
+      background: #FFF0F6; color: #E75294;
+      font-size: 0.65rem; font-weight: 700; letter-spacing: 0.1em;
+      text-transform: uppercase; padding: 0.25rem 0.7rem;
+      border-radius: 20px; border: 1px solid #fcc; margin-bottom: 0.75rem;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: #333; color: #fff;
+      padding: 2rem; text-align: center; font-size: 0.85rem;
+    }
     footer a { color: #E75294; text-decoration: none; }
     footer a:hover { text-decoration: underline; }
+
+    /* ===== RESPONSIVE ===== */
     @media (max-width: 768px) {
       .blog-hero h1 { font-size: 2rem; }
       .article-card.featured { flex-direction: column; }
@@ -91,801 +200,113 @@
   </style>
 </head>
 <body>
+
+  <!-- ===== STICKY HEADER ===== -->
   <header>
     <div class="header-container">
       <div class="header-left">
-        <div class="header-headshot"><img src="assets/images/headshots/head-shot -- round.png" alt="Dr. Soma Mandal"></div>
+        <div class="header-headshot">
+          <img src="assets/images/headshots/head-shot -- round.png" alt="Dr. Soma Mandal">
+        </div>
         <span class="header-text">Dr. Soma Mandal</span>
         <a href="index.html" class="header-back">← Back to Home</a>
       </div>
-      <div class="header-logo"><img src="assets/logos/logo-primary.png" alt="Dr. Soma Mandal Logo"></div>
+      <div class="header-logo">
+        <img src="assets/logos/logo-primary.png" alt="Dr. Soma Mandal Logo">
+      </div>
     </div>
   </header>
+
+  <!-- ===== HERO ===== -->
   <section class="blog-hero">
     <div class="blog-hero-content">
       <span class="blog-hero-label">Evidence-Based Guidance</span>
       <h1>The <span class="accent">Menopause</span> Blog</h1>
-      <p>Warm, practical insights for women navigating perimenopause, menopause, and the vibrant years beyond — from a doctor who truly understands.</p>
+      <p>Warm, practical insights for women navigating perimenopause, menopause, and the vibrant years beyond &mdash; from a doctor who truly understands.</p>
       <hr class="blog-hero-rule">
     </div>
   </section>
+
+  <!-- ===== TABLE OF CONTENTS (dynamic) ===== -->
   <nav class="toc-section" id="toc-section">
     <div class="toc-header">
       <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 4h12M2 8h8M2 12h10"/></svg>
       <span>In this issue</span>
     </div>
-    <ul class="toc-list" id="toc-list"></ul>
+    <ul class="toc-list" id="toc-list">
+      <!-- Populated by JS -->
+    </ul>
   </nav>
   <hr class="toc-divider">
-  <main id="articles-main"></main>
+
+  <!-- ===== ARTICLE CARDS (dynamic) ===== -->
+  <main id="articles-main">
+    <!-- Populated by JS -->
+  </main>
+
+  <!-- ===== FOOTER ===== -->
   <footer>
     <p>&copy; 2026 Dr. Soma Mandal, MD &nbsp;|&nbsp; <a href="index.html">Back to Home</a></p>
   </footer>
+
   <script>
     (async function() {
       let articles;
-      try { const res = await fetch('data/articles.json'); articles = await res.json(); }
-      catch(e) { document.getElementById('articles-main').innerHTML = '<p style="padding:2rem;color:#c00">Could not load articles.</p>'; return; }
+      try {
+        const res = await fetch('data/articles.json');
+        articles = await res.json();
+      } catch(e) {
+        document.getElementById('articles-main').innerHTML = '<p style="padding:2rem;color:#c00">Could not load articles.</p>';
+        return;
+      }
+
+      // articles.json is already sorted newest-first
       const tocList = document.getElementById('toc-list');
       const main = document.getElementById('articles-main');
+
       articles.forEach(function(article, i) {
+        // TOC entry
         const li = document.createElement('li');
         const a = document.createElement('a');
-        a.href = '/blog/' + article.slug; a.className = 'toc-link';
+        a.href = '/blog/' + article.slug;
+        a.className = 'toc-link';
         a.textContent = article.toc || article.title;
-        li.appendChild(a); tocList.appendChild(li);
+        li.appendChild(a);
+        tocList.appendChild(li);
+
+        // Format date
         const d = new Date(article.date + 'T12:00:00');
         const dateStr = d.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+
+        // Article card
         const card = document.createElement('article');
         card.className = 'article-card' + (i === 0 ? ' featured' : '');
+
         const badgeHTML = i === 0 ? '<span class="featured-badge">Latest Article</span>' : '';
-        card.innerHTML = '<div class="card-image"><img src="/' + article.image + '" alt="' + escapeAttr(article.imageAlt || article.title) + '" loading="' + (i === 0 ? 'eager' : 'lazy') + '"></div><div class="card-body">' + badgeHTML + '<p class="card-date">' + dateStr + '</p><h2 class="card-title">' + escapeHTML(article.title) + '</h2><p class="card-excerpt">' + escapeHTML(article.excerpt) + '</p><a href="/blog/' + article.slug + '" class="card-read-more">Read Article →</a></div>';
+
+        card.innerHTML =
+          '<div class="card-image">' +
+            '<img src="/' + article.image + '" alt="' + escapeAttr(article.imageAlt || article.title) + '" loading="' + (i === 0 ? 'eager' : 'lazy') + '">' +
+          '</div>' +
+          '<div class="card-body">' +
+            badgeHTML +
+            '<p class="card-date">' + dateStr + '</p>' +
+            '<h2 class="card-title">' + escapeHTML(article.title) + '</h2>' +
+            '<p class="card-excerpt">' + escapeHTML(article.excerpt) + '</p>' +
+            '<a href="/blog/' + article.slug + '" class="card-read-more">Read Article →</a>' +
+          '</div>';
+
         main.appendChild(card);
       });
     })();
-    function escapeHTML(s) { return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
-    function escapeAttr(s) { return s.replace(/"/g,'&quot;').replace(/'/g,'&#39;'); }
+
+    function escapeHTML(s) {
+      return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+    }
+    function escapeAttr(s) {
+      return s.replace(/"/g,'&quot;').replace(/'/g,'&#39;');
+    }
   </script>
-</body>
-</html><!DOCTYPE html>
-<html lang="en">
-<head>
-        <!-- Google Analytics 4 -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-B7932NY0NF"></script>
-        <script>
-                  window.dataLayer = window.dataLayer || [];
-                  function gtag(){dataLayer.push(arguments);}
-                  gtag('js', new Date());
-                  gtag('config', 'G-B7932NY0NF');
-        </script>
-        a charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog — Dr. Soma Mandal, MD | Women’s Health &amp; Menopause</title>     <meta name="description" content="Evidence-based articles on menopause, perimenopause, hormone therapy, hot flashes, sleep, anxiety, and midlife women’s health — by board-certified internist Dr. Soma Mandal.">     <meta name="keywords" content="menopause blog, perimenopause symptoms, hormone therapy, hot flashes, women’s health, Dr. Soma Mandal, midlife health, menopause myths">     <meta property="og:title" content="Blog — Dr. Soma Mandal, MD | Women’s Health &amp; Menopause">     <meta property="og:description" content="Evidence-based articles on menopause, perimenopause, hormone therapy, sleep, and midlife women’s health by board-certified internist Dr. Soma Mandal.">     <meta property="og:type" content="website">     <meta property="og:url" content="https://www.somamandalmd.com/blog">     <meta property="og:image" content="https://www.somamandalmd.com/assets/logos/Dr.Soma-Mandal-logo-color.png">     <meta name="twitter:card" content="summary_large_image">     <meta name="twitter:title" content="Blog — Dr. Soma Mandal, MD | Women’s Health &amp; Menopause">     <meta name="twitter:description" content="Evidence-based articles on menopause, perimenopause, hormone therapy, and midlife health by Dr. Soma Mandal.">     <link rel="canonical" href="https://www.somamandalmd.com/blog">
-    <link rel="icon" type="image/png" sizes="96x96" href="assets/logos/favicon96x96.png">
-    <link rel="icon" type="image/png" sizes="180x180" href="assets/logos/favicon180x180.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
 
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            background-color: #FAF8F6;
-            color: #333333;
-            line-height: 1.6;
-        }
-
-        /* ===== HEADER ===== */
-        header {
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            background-color: #FFFFFF;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-        }
-
-        .header-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 1rem 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .header-left {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-        }
-
-        .header-headshot {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            background-color: #FFF5F7;
-            overflow: hidden;
-            flex-shrink: 0;
-        }
-
-        .header-headshot img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .header-text {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.1rem;
-            font-weight: 700;
-            color: #333333;
-        }
-
-        .header-back {
-            color: #E75294;
-            text-decoration: none;
-            font-size: 0.9rem;
-            margin-left: 1rem;
-            display: inline-block;
-        }
-
-        .header-back:hover {
-            text-decoration: underline;
-        }
-
-        .header-logo img {
-            height: 45px;
-            width: auto;
-        }
-
-        /* ===== HERO SECTION ===== */
-        .blog-hero {
-            background: linear-gradient(160deg, #1a1a1a 0%, #2d1f28 50%, #4a2039 100%);
-            padding: 4.5rem 2rem 4rem;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .blog-hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: radial-gradient(ellipse at 30% 80%, rgba(231, 82, 148, 0.15), transparent 60%),
-                        radial-gradient(ellipse at 70% 20%, rgba(231, 82, 148, 0.08), transparent 50%);
-            pointer-events: none;
-        }
-
-        .blog-hero-content {
-            position: relative;
-            z-index: 1;
-            max-width: 680px;
-            margin: 0 auto;
-        }
-
-        .blog-hero-label {
-            display: inline-block;
-            font-size: 0.7rem;
-            font-weight: 600;
-            letter-spacing: 3px;
-            text-transform: uppercase;
-            color: #E75294;
-            margin-bottom: 1rem;
-            padding: 0.4rem 1rem;
-            border: 1px solid rgba(231, 82, 148, 0.3);
-            border-radius: 20px;
-        }
-
-        .blog-hero h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: 2.8rem;
-            color: #FFFFFF;
-            margin-bottom: 1.2rem;
-            line-height: 1.15;
-        }
-
-        .blog-hero h1 .accent {
-            color: #E75294;
-        }
-
-        .blog-hero p {
-            font-size: 1.05rem;
-            color: rgba(255, 255, 255, 0.7);
-            max-width: 520px;
-            margin: 0 auto;
-            line-height: 1.7;
-        }
-
-        .blog-hero-rule {
-            width: 50px;
-            height: 2px;
-            background: #E75294;
-            margin: 1.5rem auto 0;
-            border: none;
-            border-radius: 1px;
-        }
-
-        /* ===== TABLE OF CONTENTS ===== */
-        .toc-section {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 2rem 2rem 1.5rem;
-        }
-
-        .toc-header {
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-            margin-bottom: 1rem;
-        }
-
-        .toc-header svg {
-            width: 16px;
-            height: 16px;
-            color: #E75294;
-            flex-shrink: 0;
-        }
-
-        .toc-header span {
-            font-size: 0.7rem;
-            font-weight: 600;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            color: #999;
-        }
-
-        .toc-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0;
-            list-style: none;
-        }
-
-        .toc-list li {
-            position: relative;
-        }
-
-        .toc-list li:not(:last-child)::after {
-            content: '·';
-            color: #ccc;
-            padding: 0 0.5rem;
-            font-weight: 700;
-        }
-
-        .toc-link {
-            color: #666;
-            text-decoration: none;
-            font-size: 0.88rem;
-            font-weight: 400;
-            transition: color 0.2s ease;
-            line-height: 2;
-        }
-
-        .toc-link:hover {
-            color: #E75294;
-        }
-
-        .toc-divider {
-            max-width: 900px;
-            margin: 0 auto;
-            border: none;
-            border-top: 1px solid #eee;
-        }
-
-        /* ===== MAIN CONTENT ===== */
-        main {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-
-        article {
-            background-color: #FFFFFF;
-            border-radius: 12px;
-            margin-bottom: 4rem;
-            overflow: hidden;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-        }
-
-        .article-header-image {
-            height: 320px;
-            position: relative;
-            overflow: hidden;
-        }
-        .article-header-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
-            transition: transform 0.4s ease;
-        }
-        article:hover .article-header-image img {
-            transform: scale(1.03);
-        }
-
-        .article-content {
-            padding: 2.5rem;
-        }
-
-        article h2 {
-            font-family: 'Playfair Display', serif;
-            font-size: 2rem;
-            color: #333333;
-            margin-bottom: 0.75rem;
-        }
-
-        .article-meta {
-            font-size: 0.95rem;
-            color: #E75294;
-            margin-bottom: 1.5rem;
-            font-weight: 500;
-        }
-
-        article p {
-            margin-bottom: 1rem;
-            line-height: 1.7;
-            color: #555555;
-        }
-
-        article p:last-of-type {
-            margin-bottom: 1.5rem;
-        }
-
-        .article-back-to-top {
-            display: inline-block;
-            color: #E75294;
-            text-decoration: none;
-            font-weight: 500;
-            font-size: 0.9rem;
-            margin-top: 1rem;
-        }
-
-        .article-back-to-top:hover {
-            text-decoration: underline;
-        }
-
-        .article-divider {
-            height: 1px;
-            background: linear-gradient(to right, transparent, #EEEEEE, transparent);
-            margin: 3rem 0;
-        }
-
-        /* Gradient classes no longer needed — replaced by photo images */
-
-        /* ===== FOOTER ===== */
-        footer {
-            background-color: #333333;
-            color: #FFFFFF;
-            padding: 2rem;
-            text-align: center;
-        }
-
-        footer a {
-            color: #E75294;
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
-
-        /* ===== RESPONSIVE ===== */
-        @media (max-width: 768px) {
-            .blog-hero h1 {
-                font-size: 2rem;
-            }
-
-            .blog-hero p {
-                font-size: 1rem;
-            }
-
-            article h2 {
-                font-size: 1.5rem;
-            }
-
-            .article-content {
-                padding: 1.5rem;
-            }
-
-            .header-container {
-                padding: 1rem;
-            }
-
-            .header-text {
-                font-size: 1rem;
-            }
-
-            main {
-                padding: 1rem;
-            }
-
-            .toc-section {
-                padding: 1.5rem 1rem 1rem;
-            }
-        }
-    </style>
-</head>
-<body>
-    <!-- ===== STICKY HEADER ===== -->
-    <header>
-        <div class="header-container">
-            <div class="header-left">
-                <div class="header-headshot">
-                    <img src="assets/images/headshots/head-shot -- round.png" alt="Dr. Soma Mandal">
-                </div>
-                <div class="header-text">Dr. Soma Mandal</div>
-                <a href="index.html" class="header-back">← Back to Home</a>
-            </div>
-            <div class="header-logo">
-                <img src="assets/logos/Dr.Soma Mandal logo.png" alt="Dr. Soma Mandal Logo">
-            </div>
-        </div>
-    </header>
-
-    <!-- ===== HERO SECTION ===== -->
-    <section class="blog-hero">
-        <div class="blog-hero-content">
-            <span class="blog-hero-label">Evidence-Based Guidance</span>
-            <h1>The <span class="accent">Menopause</span> Blog</h1>
-            <p>Warm, practical insights for women navigating perimenopause, menopause, and the vibrant years beyond — from a doctor who truly understands.</p>
-            <hr class="blog-hero-rule">
-        </div>
-    </section>
-
-    <!-- ===== TABLE OF CONTENTS ===== -->
-    <nav class="toc-section">
-        <div class="toc-header">
-            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 4h12M2 8h8M2 12h10"/></svg>
-            <span>In this issue</span>
-        </div>
-        <ul class="toc-list">
-            <li><a href="#7-questions-menopause" class="toc-link">7 Questions for Your Doctor</a></li>
-            <li><a href="#hot-flashes" class="toc-link">Hot Flashes</a></li>
-            <li><a href="#signs-perimenopause" class="toc-link">Signs of Perimenopause</a></li>
-            <li><a href="#anxiety-stress-menopause" class="toc-link">Anxiety &amp; Stress</a></li>
-            <li><a href="#insomnia-menopause" class="toc-link">Insomnia</a></li>
-            <li><a href="#hormone-therapy" class="toc-link">Hormone Therapy</a></li>
-            <li><a href="#birth-control-perimenopause" class="toc-link">Birth Control</a></li>
-            <li><a href="#skin-glow" class="toc-link">Skin Glow</a></li>
-            <li><a href="#menopause-myths" class="toc-link">Myths Debunked</a></li>
-            <li><a href="#muffin-top" class="toc-link">Muffin Top</a></li>
-        </ul>
-    </nav>
-    <hr class="toc-divider">
-
-    <!-- ===== MAIN BLOG CONTENT ===== -->
-    <main>
-        <!-- ARTICLE 1 -->
-        <article id="7-questions-menopause">
-            <div class="article-header-image"><img src="blog-images/01-doctor-questions.jpg" alt="Mature woman with silver hair smiling warmly — navigating menopause questions" loading="lazy"></div>
-            <div class="article-content">
-                <h2>7 Questions to Ask Your Doctor About Menopause</h2>
-                <p class="article-meta">By Dr. Soma Mandal, MD</p>
-
-                <p>Walking into your doctor's office with a plan is empowering. Menopause is a major life transition, and you deserve clarity on what's happening in your body and what options are available to you. Here are seven essential questions I encourage every woman to bring to her healthcare provider during this season of life.</p>
-
-                <p><strong>1. "How will we know if I'm in perimenopause or menopause?"</strong> — This isn't always straightforward. Irregular periods, brain fog, and night sweats could signal perimenopause, which can last anywhere from 4 to 10 years. Understanding where you are in the timeline helps you plan ahead. Ask about hormone testing if you feel it would help clarify your situation.</p>
-
-                <p><strong>2. "What hormone tests are available and should I have them?"</strong> — FSH (follicle-stimulating hormone), estradiol, and thyroid panels can all be informative. However, a single hormone test doesn't tell the whole story—hormones fluctuate wildly during perimenopause. Talk to your doctor about whether testing makes sense for your symptoms and situation.</p>
-
-                <p><strong>3. "What are my options for managing hot flashes and night sweats?"</strong> — From lifestyle approaches (cooling strategies, breathwork) to dietary changes (reducing triggers like spicy foods and alcohol) to medical options (HRT, SSRIs, gabapentin), there's a spectrum of approaches. Your doctor should discuss what aligns with your preferences and health history.</p>
-
-                <p><strong>4. "Is hormone replacement therapy (HRT) right for me?"</strong> — This question deserves a nuanced answer, not a yes or no. HRT isn't one-size-fits-all. Your age, symptom severity, family history, and personal risk factors all matter. Ask about both risks and benefits in your specific context.</p>
-
-                <p><strong>5. "How might menopause affect my weight, metabolism, and cardiovascular health?"</strong> — Declining estrogen shifts how your body distributes fat, processes glucose, and manages cholesterol. Understanding these changes helps you make informed decisions about exercise, nutrition, and preventive screenings.</p>
-
-                <p><strong>6. "What should I know about bone health and osteoporosis risk?"</strong> — Estrogen protects bone density. As it declines, your risk of osteoporosis increases. Ask about screening (DEXA scans) and whether you need additional calcium, vitamin D, or other preventive measures.</p>
-
-                <p><strong>7. "Are there non-hormonal or lifestyle approaches I should try first?"</strong> — Regular exercise, stress management, adequate sleep, a whole-foods-based diet, and targeted supplements (like black cohosh or red clover) can make a meaningful difference for some women. Your doctor can help you sequence these approaches.</p>
-
-                <p>The best healthcare relationship is one where you feel heard and informed. Write down your biggest symptoms, concerns, and questions before your visit. You're not just managing menopause—you're designing the next chapter of your health.</p>
-
-                <a href="#" class="article-back-to-top">↑ Back to top</a>
-            </div>
-        </article>
-
-        <div class="article-divider"></div>
-
-        <!-- ARTICLE 2 -->
-        <article id="hot-flashes">
-            <div class="article-header-image"><img src="blog-images/02-hot-flashes.jpg" alt="Mature woman in nightgown — the warmth and reality of hot flashes" loading="lazy"></div>
-            <div class="article-content">
-                <h2>A Doctor's Advice on Hot Flashes</h2>
-                <p class="article-meta">By Dr. Soma Mandal, MD</p>
-
-                <p>If you've ever felt a sudden wave of intense heat spread across your face and body, followed by a drenching sweat, followed by chills—welcome to the club that about 80% of menopausal women experience. Hot flashes are one of menopause's most visible (and inconvenient) symptoms, and they can range from mildly uncomfortable to genuinely disruptive to your sleep, work, and confidence.</p>
-
-                <p>Let's start with the science. Hot flashes happen because your brain's temperature thermostat—controlled by estrogen—loses its primary regulator as estrogen drops. Your body gets confused. It thinks it's overheating when it's not, triggering a cascade of cooling mechanisms: sudden sweating, heart palpitations, flushed skin, and that distinctive feeling of your internal furnace being turned up to 11.</p>
-
-                <p><strong>Why Do Some Women Get Worse Hot Flashes?</strong> Stress, poor sleep, spicy foods, caffeine, alcohol, and overheating environments can all be triggers. But genetics also play a role—some women's thermostat systems are simply more reactive than others. If your mother had severe hot flashes, yours might follow suit.</p>
-
-                <p><strong>Lifestyle Strategies That Actually Work:</strong> Start here. These are first-line interventions with real evidence behind them. Keep your environment cool (lower thermostat, ceiling fan, moisture-wicking sleepwear). Dress in layers so you can shed them quickly. Reduce known triggers: limit alcohol, cut back on spicy foods, manage stress through meditation or yoga, and ensure you're sleeping well (which is admittedly harder when night sweats are waking you up—it's a cycle). Stay hydrated and maintain regular exercise, which helps regulate your nervous system.</p>
-
-                <p><strong>Dietary Approaches:</strong> Some women find relief through phytoestrogens (plant compounds that mildly mimic estrogen) found in soy, flaxseed, and legumes. Others notice that a diet rich in vegetables, omega-3 fatty acids, and adequate protein helps. There isn't overwhelming evidence for most supplements, but some women report benefit from black cohosh, red clover, or sage leaf extract. Talk with your doctor before starting any new supplement.</p>
-
-                <p><strong>Medical Options:</strong> If lifestyle measures aren't enough, you have choices. Hormone replacement therapy (estrogen plus/minus progesterone) is highly effective—it addresses the root cause by replacing what's missing. For women who can't or prefer not to use HRT, SSRIs (antidepressants like venlafaxine or paroxetine) or gabapentin can reduce hot flashes by 50-60%. These aren't quick-fix—they take 2-3 weeks to work—but they can be game-changers.</p>
-
-                <p><strong>The Bottom Line:</strong> Hot flashes are temporary, even though they feel eternal in the moment. Most women find significant relief within 5-10 years. You don't have to tough it out alone. Your options range from simple lifestyle tweaks to evidence-based medical therapies. The goal is getting you back to feeling like yourself—not flushed, not drenched, just comfortable.</p>
-
-                <a href="#" class="article-back-to-top">↑ Back to top</a>
-            </div>
-        </article>
-
-        <div class="article-divider"></div>
-
-        <!-- ARTICLE 3 -->
-        <article id="signs-perimenopause">
-            <div class="article-header-image"><img src="blog-images/03-perimenopause.jpg" alt="Mature woman gazing thoughtfully out a window — reflecting on perimenopause changes" loading="lazy"></div>
-            <div class="article-content">
-                <h2>Am I or Aren't I? Signs of Perimenopause</h2>
-                <p class="article-meta">By Dr. Soma Mandal, MD</p>
-
-                <p>Perimenopause is the transition phase leading up to menopause, and it can last anywhere from 4 to 10 years. During this time, your ovaries are winding down hormone production, but not in a linear way—hormones fluctuate wildly, creating a rollercoaster of symptoms that can feel confusing and isolating. The challenge? Perimenopause often masquerades as stress, depression, or other conditions. So let's talk about what's actually happening.</p>
-
-                <p><strong>Irregular Periods Are the Hallmark:</strong> This is typically the first sign. Your cycle might skip a month, then come back heavier. Periods might be closer together or further apart. You might have some months with spotting or breakthrough bleeding. This unpredictability—different from your normal rhythm—is perimenopause's calling card. Menopause is officially declared when you've gone 12 consecutive months without a period.</p>
-
-                <p><strong>Brain Fog and Memory Lapses:</strong> Many women describe this as "menopause brain." You walk into a room and forget why you're there. You lose your train of thought mid-conversation. You can't remember a word you use every day. This isn't aging—it's real, it's documented in research, and it's driven by fluctuating estrogen. Estrogen is crucial for memory and cognitive function. When it swings up and down, so does your brain's performance.</p>
-
-                <p><strong>Mood Changes That Feel Out of Character:</strong> You might feel irritable for no reason. Anxiety might spike unexpectedly. Some women experience depression that doesn't respond the way their previous depression did. These mood shifts are tied to hormonal fluctuations affecting neurotransmitters like serotonin. This isn't weakness or weakness of character—it's biochemistry.</p>
-
-                <p><strong>Sleep Disruption:</strong> Night sweats are the obvious culprit, but even without sweats, many perimenopausal women struggle with sleep. You might wake at 3 AM unable to fall back asleep. You might feel restless all night. Your sleep architecture is literally changing due to hormonal shifts affecting your sleep-wake cycle.</p>
-
-                <p><strong>Hot Flashes and Night Sweats:</strong> As mentioned earlier, these are common perimenopause symptoms, though they intensify as you approach menopause itself. Some women experience them mildly; others are severely affected.</p>
-
-                <p><strong>Joint and Muscle Aches:</strong> Estrogen plays a role in inflammation and connective tissue health. As it declines, you might notice new aches in your knees, shoulders, or lower back. These aren't injuries—they're hormonal.</p>
-
-                <p><strong>Vaginal Dryness and Changes in Libido:</strong> Estrogen keeps vaginal tissue plump and lubricated. As it declines, dryness increases, which can make intercourse uncomfortable. Libido often declines too, partly due to hormones and partly due to not wanting sex to be painful.</p>
-
-                <p><strong>Skin and Hair Changes:</strong> Your skin might become drier or oilier. You might notice thinning hair on your head or increased facial hair. Again, estrogen. It touches everything.</p>
-
-                <p><strong>The Gauntlet Approach to Diagnosis:</strong> There's no single test that definitively says "you're in perimenopause." Your doctor usually diagnoses it based on your age (typically 40s-50s), your symptoms, and your period pattern. Hormone tests can be helpful but are tricky to interpret since hormones fluctuate so much during this phase.</p>
-
-                <p><strong>Why This Matters:</strong> Recognizing perimenopause helps you make informed decisions about your health. It normalizes your symptoms—you're not going crazy. It opens conversations about management strategies, from lifestyle to supplements to HRT. And it helps you plan for the future, knowing that this transitional phase is temporary, even if it lasts a decade.</p>
-
-                <a href="#" class="article-back-to-top">↑ Back to top</a>
-            </div>
-        </article>
-
-        <div class="article-divider"></div>
-
-        <!-- ARTICLE 4 -->
-        <article id="anxiety-stress-menopause">
-            <div class="article-header-image"><img src="blog-images/04-anxiety.jpg" alt="Mature woman meditating peacefully — finding calm through menopause anxiety" loading="lazy"></div>
-            <div class="article-content">
-                <h2>Anxiety and Stress in Menopause</h2>
-                <p class="article-meta">By Dr. Soma Mandal, MD</p>
-
-                <p>Anxiety during menopause feels like it comes out of nowhere. You might be someone who's never had anxiety before, and suddenly you're experiencing panic-like symptoms: racing heart, shortness of breath, a sense of impending doom. Or if you've had previous anxiety, you might notice it intensifying in ways that don't respond to your usual coping strategies. This is real, it's documented in the research, and understanding the mechanism helps you address it.</p>
-
-                <p><strong>The Estrogen-Anxiety Connection:</strong> Estrogen modulates several neurotransmitter systems crucial for mood regulation, including serotonin, GABA, and dopamine. As estrogen drops, these systems become dysregulated. Additionally, estrogen affects the HPA axis (your body's stress response system). Normally, when you encounter a stressor, your body releases cortisol to handle it, then turns off the response once the threat passes. But with fluctuating estrogen, your HPA axis becomes hyperreactive—your nervous system stays in a heightened state even after the stressor is gone.</p>
-
-                <p><strong>Sleep Deprivation Amplifies Everything:</strong> Night sweats and insomnia create a vicious cycle. Poor sleep destabilizes your mood, increases anxiety, and impairs your stress resilience. You become more reactive to life's normal challenges because you're exhausted. Addressing sleep becomes priority number one.</p>
-
-                <p><strong>Stress Management Approaches That Work:</strong> Regular exercise is one of the most evidence-based interventions for anxiety during menopause. Movement helps regulate the nervous system, burn excess cortisol, and restore sleep. Aim for 150 minutes of moderate exercise per week—walking, swimming, yoga, cycling, whatever you'll actually do. Mindfulness meditation and breathing work are powerful. Even 10 minutes daily of deep breathing or a guided meditation can shift your nervous system from sympathetic (fight-or-flight) to parasympathetic (rest-and-digest). Many women find practices like yoga, tai chi, or qigong particularly helpful because they combine movement with mindfulness.</p>
-
-                <p><strong>Cognitive-Behavioral Therapy (CBT):</strong> If anxiety is significantly interfering with your life, CBT with a therapist trained in menopause-related anxiety can be transformative. You learn to identify anxiety-provoking thought patterns and develop tools to interrupt them.</p>
-
-                <p><strong>Lifestyle Fundamentals:</strong> This bears repeating: sleep, exercise, nutrition, and stress management form the foundation. Reduce caffeine (which amplifies anxiety), limit alcohol (which disrupts sleep), eat a whole-foods-based diet rich in omega-3 fatty acids, and build community. Connection—whether with friends, family, or a support group—buffets against anxiety.</p>
-
-                <p><strong>Supplements Worth Considering:</strong> Magnesium glycinate (200-300 mg daily) supports nervous system calm. L-theanine, found in green tea and available as a supplement, promotes relaxation without sedation. Some women benefit from adaptogenic herbs like ashwagandha or rhodiola, though the evidence is mixed. Always discuss supplements with your doctor.</p>
-
-                <p><strong>Medical Options:</strong> If anxiety is severe or lifestyle measures aren't sufficient, your doctor might recommend SSRIs (which work for both depression and anxiety), other antidepressants, or in some cases, anti-anxiety medications short-term. HRT can also help, as it addresses the hormonal root cause. The key is not white-knuckling through—if you're suffering, treatment is available.</p>
-
-                <p><strong>The Integration Approach:</strong> Eastern medicine traditions view this transition as an opportunity to harness inner wisdom and strength. Meditation, yoga, and practices that honor the mind-body-spirit connection aren't just feel-good—they're neuroregulatory. Your nervous system responds to these practices at a physiological level.</p>
-
-                <p>Anxiety in menopause is common and treatable. You're not overreacting, and you're not alone. With the right combination of lifestyle, practices, and potentially medical support, you can move through this transition with more ease.</p>
-
-                <a href="#" class="article-back-to-top">↑ Back to top</a>
-            </div>
-        </article>
-
-        <div class="article-divider"></div>
-
-        <!-- ARTICLE 5 -->
-        <article id="insomnia-menopause">
-            <div class="article-header-image"><img src="blog-images/05-insomnia.jpg" alt="Woman lying awake in bed at night — the reality of menopause insomnia" loading="lazy"></div>
-            <div class="article-content">
-                <h2>Can't Sleep? Menopause and Insomnia</h2>
-                <p class="article-meta">By Dr. Soma Mandal, MD</p>
-
-                <p>Sleep is the foundation of health, and menopause seems determined to steal it from you. Whether it's night sweats jolting you awake, an overactive mind, or simply lying awake for hours for no clear reason, menopause-related insomnia is one of the most disruptive symptoms women face. The cruel irony? You need sleep more than ever during this transition, and your body seems less willing to provide it.</p>
-
-                <p><strong>Why Does Menopause Disrupt Sleep?</strong> There are several mechanisms at play. First, night sweats: hot flashes aren't just daytime phenomena. Many women wake drenched in sweat, forcing them to change clothes, adjust the thermostat, and try to fall back asleep. Second, estrogen and progesterone both promote sleep, and as these hormones decline, your natural sleep architecture changes. Third, the stress and anxiety that often accompany menopause keep your nervous system activated, making it hard to relax. Fourth, cortisol patterns shift during menopause—you might find yourself waking at 3 or 4 AM with a racing mind, unable to fall back asleep. Finally, sleep apnea becomes more common in postmenopausal women due to hormonal changes affecting airway muscle tone.</p>
-
-                <p><strong>Sleep Hygiene: The Foundation:</strong> Before reaching for medication, optimize sleep hygiene. Keep your bedroom cool (ideally 65-68°F), dark, and quiet. Consider blackout curtains, a white noise machine, and breathable, moisture-wicking sleepwear. Go to bed and wake up at the same time every day, even weekends—this trains your circadian rhythm. Avoid screens (the blue light suppresses melatonin) for at least an hour before bed. Don't use bed for work or worry—reserve it for sleep and intimacy.</p>
-
-                <p><strong>What to Avoid Before Bed:</strong> Limit caffeine after noon (it stays in your system for 5-6 hours). Cut back on alcohol in the evening—while it might make you drowsy initially, it disrupts sleep quality and night sweats. Avoid large meals close to bedtime; they can cause reflux and discomfort. Limit fluids 2-3 hours before bed to reduce nighttime bathroom trips.</p>
-
-                <p><strong>Daytime Practices That Support Night Sleep:</strong> Regular exercise improves sleep quality, but avoid vigorous exercise within 3 hours of bedtime, as it's stimulating. Exposure to natural light—especially in the morning—helps regulate your circadian rhythm. Aim for 20-30 minutes of sunlight exposure before noon. If anxiety is keeping you awake, address it during the day through mindfulness, journaling, or talking with someone. If you find yourself awake in bed for more than 20 minutes, get up and do a quiet, non-stimulating activity until you feel sleepy again—don't lie in bed fighting insomnia.</p>
-
-                <p><strong>Natural Approaches:</strong> Magnesium supplements (200-400 mg before bed) can promote sleep. Melatonin (0.5-3 mg) may help, especially if your sleep-wake cycle is disrupted. Some women find valerian root, passionflower, or chamomile tea helpful. L-theanine (the calming compound in green tea) promotes relaxation. However, these work better for some women than others—think of them as experiments rather than guaranteed fixes.</p>
-
-                <p><strong>Cognitive-Behavioral Therapy for Insomnia (CBT-I):</strong> This is a specialized therapy specifically designed for insomnia and has excellent evidence. A CBT-I therapist teaches you to identify and change thought patterns and behaviors that perpetuate insomnia. It often works as well or better than medication.</p>
-
-                <p><strong>Medical Options:</strong> If other approaches aren't working, your doctor might recommend low-dose antidepressants (like trazodone or mirtazapine), which can improve sleep. Melatonin receptor agonists (like ramelteon) support natural sleep. Short-term use of sleep medications can help reset your sleep pattern while you work on longer-term strategies. HRT can also help, as it addresses night sweats and hormonal dysregulation.</p>
-
-                <p><strong>When to Seek Help:</strong> If insomnia has lasted more than 3 months and is affecting your quality of life, bring it up with your doctor. Sleep apnea is worth screening for, especially if you snore or have witnessed apneas (periods of not breathing). A sleep study can clarify what's happening.</p>
-
-                <p><strong>The Perspective Shift:</strong> This transitional period is temporary. Most women report improved sleep within 1-2 years after menopause. In the meantime, be gentle with yourself. On nights when sleep eludes you, rest is still restorative. Your body is going through a major change—honor that, and invest in the practices and support that help you sleep.</p>
-
-                <a href="#" class="article-back-to-top">↑ Back to top</a>
-            </div>
-        </article>
-
-        <div class="article-divider"></div>
-
-        <!-- ARTICLE 6 -->
-        <article id="hormone-therapy">
-            <div class="article-header-image"><img src="blog-images/06-hormone-therapy.jpg" alt="Mature Asian woman with gray hair in a calm garden setting — hormone therapy and wellness" loading="lazy"></div>
-            <div class="article-content">
-                <h2>Five Things to Know About Hormone Therapy</h2>
-                <p class="article-meta">By Dr. Soma Mandal, MD</p>
-
-                <p>Hormone replacement therapy (HRT) remains one of the most misunderstood treatments in women's health, largely because of outdated fears rooted in one controversial study from 2002. Let's demystify it with evidence-based information so you can make an informed decision about whether HRT is right for you.</p>
-
-                <p><strong>1. HRT Works—It's Highly Effective:</strong> For women with moderate to severe menopause symptoms, HRT is one of the most effective treatments available. It reduces hot flashes by 80-90%, improves sleep, stabilizes mood, and often restores libido. For some women, it's genuinely life-changing. The question isn't whether it works—it's whether it's appropriate for your particular situation.</p>
-
-                <p><strong>2. The 2002 Study Doesn't Apply to Most Women Today:</strong> The Women's Health Initiative study found increased breast cancer risk in women taking conjugated equine estrogen (a specific type of HRT) plus medroxyprogesterone acetate (a synthetic progestin), starting at an average age of 63. Important context: these were largely older women starting HRT years after menopause, and they were taking older formulations. Modern HRT uses different doses, delivery methods, and progestin types—and starting HRT closer to menopause onset appears to have a different risk profile. The takeaway isn't that HRT is dangerous; it's that individual factors matter.</p>
-
-                <p><strong>3. Timing Matters:</strong> There's an emerging concept called the "critical window" for HRT—the period relatively close to menopause onset when starting HRT appears safest and most effective. Women in their 50s starting HRT within 5-10 years of their last period generally have better outcomes and different risk-benefit ratios than women starting at 65 or 75. Age and time since menopause are crucial considerations your doctor should discuss with you.</p>
-
-                <p><strong>4. Not All HRT Is the Same:</strong> HRT comes in many forms: oral pills, patches, gels, creams, and vaginal preparations. It can be systemic (affecting your whole body) or local (applied to the vagina). You can take estrogen alone or estrogen plus progesterone (or a progestin). Lower doses are often sufficient and safer than higher doses. Bioidentical hormones (structurally identical to what your body makes) are popular, though they're not inherently safer than other formulations—what matters is the dose, type, and individual response. Your doctor should work with you to find the right formulation and dose for your symptoms and health profile.</p>
-
-                <p><strong>5. Individual Risk-Benefit Analysis Is Essential:</strong> HRT isn't for everyone. Women with a personal history of hormone-sensitive breast cancer, untreated clotting disorders, or active liver disease generally shouldn't use it. Women with a strong family history of breast cancer might be more cautious, though HRT isn't automatically forbidden. Conversely, women with significant bone loss, severe hot flashes, or high cardiovascular risk might benefit substantially from HRT. Your doctor should review your personal and family health history, discuss your symptom severity, explore alternatives, and help you weigh risks against benefits specific to your situation.</p>
-
-                <p><strong>The Bottom Line:</strong> HRT is a tool, not a cure-all. For some women, it's the right choice and provides tremendous relief. For others, lifestyle modifications, non-hormonal medications, or other approaches work better. The goal is an individualized decision made with full information. Don't avoid HRT because of blanket fear—and don't assume it's right for you without discussing your specific circumstances with a knowledgeable healthcare provider.</p>
-
-                <a href="#" class="article-back-to-top">↑ Back to top</a>
-            </div>
-        </article>
-
-        <div class="article-divider"></div>
-
-        <!-- ARTICLE 7 -->
-        <article id="birth-control-perimenopause">
-            <div class="article-header-image"><img src="blog-images/07-birth-control.jpg" alt="Confident Black woman with glasses laughing — empowered health choices in midlife" loading="lazy"></div>
-            <div class="article-content">
-                <h2>Don't Ditch the Birth Control Just Yet</h2>
-                <p class="article-meta">By Dr. Soma Mandal, MD</p>
-
-                <p>You're in your late 40s, your periods are becoming irregular, and you think, "I'm basically done with fertility—time to ditch the birth control." Not so fast. The transition to menopause is precisely when pregnancy becomes less likely but still possible, and it's also when birth control can serve purposes beyond preventing pregnancy. Let's talk about why you shouldn't assume you're infertile and when continuing contraception makes sense.</p>
-
-                <p><strong>Pregnancy Is Still Possible During Perimenopause:</strong> Perimenopause, remember, can last 4-10 years. During this time, your periods are irregular but you're still ovulating—sometimes unpredictably. A woman can be three months without a period, think she's infertile, have unprotected sex, and get pregnant. Unplanned pregnancy in your late 40s or early 50s carries higher risks for both mother and baby, including gestational diabetes, preeclampsia, and chromosomal abnormalities in the baby. If you don't want to become pregnant, you need contraception until you've gone 12 consecutive months without a period (the official marker of menopause).</p>
-
-                <p><strong>Birth Control Can Manage Perimenopausal Symptoms:</strong> Here's something many women don't realize: hormonal birth control—the pill, patch, ring, or progestin-only options—can actually help manage perimenopausal symptoms. Irregular bleeding becomes more predictable. Mood swings often improve. Hot flashes may decrease. Some formulations can reduce pain and cramping. If you're struggling with perimenopausal symptoms and currently using birth control, switching formulations or doses might help more than you'd expect.</p>
-
-                <p><strong>Different Contraceptive Options for Perimenopause:</strong> The combined oral contraceptive pill (estrogen plus progestin) remains effective and can provide symptom relief. For women who've had blood clots or migraines with aura, progestin-only pills or non-hormonal methods are safer. The copper IUD provides 10+ years of non-hormonal contraception. The progestin-releasing IUD (like Mirena) is also long-acting and can help regulate bleeding and reduce heavy periods. Barrier methods (condoms, diaphragm) are always an option. The key is finding a method you'll actually use consistently through this unpredictable transition.</p>
-
-                <p><strong>When to Stop Contraception:</strong> Wait until you've gone 12 consecutive months without a period. At that point, you've officially entered menopause, and fertility is no longer a concern. Your doctor can help you confirm this (sometimes with a hormone test, though it's usually based on your period history). Some women like to mark the date on their calendar to make it clear when it's safe to stop.</p>
-
-                <p><strong>The Transition from Birth Control to HRT (if needed):</strong> If you've been taking hormonal birth control during perimenopause and still have symptoms after stopping it—particularly if you've reached menopause—you might benefit from HRT. The hormones in birth control (which are higher to prevent ovulation) are different from the lower doses used in HRT (which manage symptoms). Your doctor can help you plan this transition if needed.</p>
-
-                <p><strong>A Word on Age and Contraception:</strong> There's no absolute age cutoff for birth control. Women in their 50s can safely use most contraceptive methods, provided there are no underlying health conditions that make them risky. Some older women stay on the pill; others switch to IUDs for longevity and convenience. Your age isn't a barrier—your health status is.</p>
-
-                <p><strong>The Nuance:</strong> Perimenopause creates a window where you're less likely to get pregnant but still can. Birth control addresses that risk while also helping manage the physical and emotional chaos of this transition. Don't assume that irregular periods mean infertility. Don't assume you need to white-knuckle through perimenopausal symptoms when birth control adjustments might help. And don't ditch contraception until you've hit the 12-month milestone. This transition requires intention, not assumption.</p>
-
-                <a href="#" class="article-back-to-top">↑ Back to top</a>
-            </div>
-        </article>
-
-        <div class="article-divider"></div>
-
-        <!-- ARTICLE 8 -->
-        <article id="skin-glow">
-            <div class="article-header-image"><img src="blog-images/08-skin-glow.jpg" alt="Mature woman applying skincare product — radiant skin at every age" loading="lazy"></div>
-            <div class="article-content">
-                <h2>Get Your Skin Glow On</h2>
-                <p class="article-meta">By Dr. Soma Mandal, MD</p>
-
-                <p>Your skin feels drier than it used to. You're seeing more wrinkles and less firmness. Maybe you're dealing with new breakouts or increased sensitivity. Welcome to menopause—it doesn't just affect your internal landscape; it rewrites the rules of your skin. The good news? Understanding what's happening gives you the power to address it with intention and intention.</p>
-
-                <p><strong>What Happens to Skin During Menopause:</strong> Estrogen plays a crucial role in skin health. It stimulates the production of collagen and hyaluronic acid, which keep skin firm and hydrated. It also supports the skin barrier and promotes healthy blood flow. As estrogen plummets, collagen production drops by about 30% in the first five years of menopause. Skin becomes drier, thinner, and more fragile. Wrinkles deepen. You might notice age spots appearing due to increased sun sensitivity and changes in melanin production. Acne can reappear—thank you, hormonal fluctuations. Some women develop rosacea or increased skin sensitivity. It's not vanity to notice these changes; it's biology.</p>
-
-                <p><strong>Skincare Ingredients That Actually Work:</strong> This isn't a time for wishful thinking—it's a time for evidence-based skincare. Retinoids (prescription retinoids like tretinoin or over-the-counter retinol) increase cell turnover, stimulate collagen, and reduce fine lines. Start slowly if you're new to retinoids—they can be irritating—but they're genuinely transformative with consistent use. Hyaluronic acid holds up to 1000 times its weight in water and plumps dehydrated skin. Use it on damp skin followed by a moisturizer to seal it in. Vitamin C serums are antioxidants that brighten skin and support collagen. Niacinamide (vitamin B3) reduces pores, strengthens the skin barrier, and has anti-inflammatory properties. Peptides and growth factors signal your skin to make more collagen. Sunscreen (SPF 30+) is non-negotiable—sun damage accelerates aging, and your skin is more vulnerable during menopause.</p>
-
-                <p><strong>Moisturizers Matter More Than Ever:</strong> Choose a moisturizer with ceramides and hyaluronic acid if your skin is dry. If you have oily or combination skin, a lighter moisturizer with hyaluronic acid might serve you better. Don't skip moisturizer even if you're using active ingredients like retinoids—in fact, hydration is essential when using such ingredients.</p>
-
-                <p><strong>Professional Treatments to Consider:</strong> Microneedling stimulates collagen remodeling. Chemical peels accelerate cell turnover. Laser treatments (like fractional CO2 lasers) can improve texture and reduce age spots, though they require downtime. These aren't frivolous; they're evidence-based treatments that can yield real results, especially when combined with a solid at-home routine. Consult a dermatologist to see what's appropriate for your skin.</p>
-
-                <p><strong>Nutrition for Skin Health:</strong> You can't out-skincare a poor diet. Antioxidant-rich foods (berries, leafy greens, colorful vegetables) protect skin from oxidative stress. Omega-3 fatty acids (fatty fish, flaxseed, walnuts) support the skin barrier. Adequate protein provides amino acids for collagen synthesis. Stay hydrated—aim for at least 8-10 glasses of water daily. Consider supplementing with collagen peptides (there's emerging evidence they support skin elasticity) or hyaluronic acid supplements if your skin is especially dry.</p>
-
-                <p><strong>Hormones and Skin:</strong> If you're considering HRT for hot flashes or other symptoms, know that it can also benefit your skin. Estrogen supports collagen and skin hydration, so some women notice skin improvement when they start HRT. This is another reason to discuss HRT comprehensively with your doctor—the benefits extend beyond managing vasomotor symptoms.</p>
-
-                <p><strong>The Self-Compassion Angle:</strong> Yes, implement evidence-based skincare. But also recognize that aging skin is healthy skin. A few wrinkles are proof that you've smiled, laughed, and lived. The goal isn't to look 30 again—it's to feel comfortable in your skin and maintain its health. If skincare makes you feel good, do it. If expensive products would make you anxious, save your money. Meet yourself where you are, with both intention and grace.</p>
-
-                <a href="#" class="article-back-to-top">↑ Back to top</a>
-            </div>
-        </article>
-
-        <div class="article-divider"></div>
-
-        <!-- ARTICLE 9 -->
-        <article id="menopause-myths">
-            <div class="article-header-image"><img src="blog-images/09-menopause-myths.jpg" alt="Older women laughing together — debunking menopause myths with joy and community" loading="lazy"></div>
-            <div class="article-content">
-                <h2>True or False: Menopause Myths Debunked</h2>
-                <p class="article-meta">By Dr. Soma Mandal, MD</p>
-
-                <p>Menopause carries a lot of cultural baggage and outdated beliefs. Let's separate fact from fiction so you can make decisions based on evidence, not mythology.</p>
-
-                <p><strong>Myth 1: "Menopause means you're old and your life is over."</strong> FALSE. Menopause is a biological transition, not a decline into irrelevance. Women spend about a third of their lives in the postmenopausal phase. Many women report that their 50s and 60s are the most fulfilling decades—they have experience, confidence, freedom from the burden of periods and fertility concerns, and often better understanding of their own needs. Menopause is not an ending; it's a transition to a new chapter.</p>
-
-                <p><strong>Myth 2: "HRT causes breast cancer."</strong> NUANCED. The increased breast cancer risk associated with combined HRT (estrogen plus progestin) in the Women's Health Initiative study was modest (about a 20% relative increase, or roughly 8 additional cases per 10,000 women per year of use). Context: your baseline risk of breast cancer increases with age regardless. The risk was higher in the study because participants were older and started HRT years after menopause. Starting HRT closer to menopause onset and using it for a limited time carries a different risk profile. Estrogen-only HRT (for women without a uterus) showed no increased breast cancer risk. The message isn't "HRT is safe for everyone"—it's that individual risk assessment is critical.</p>
-
-                <p><strong>Myth 3: "Weight gain during menopause is inevitable."</strong> PARTIAL. It's true that many women gain weight during menopause due to declining estrogen (which shifts fat distribution toward the belly), slowing metabolism, and decreased physical activity. But it's not inevitable. Women who maintain regular exercise, prioritize strength training, eat a whole-foods-based diet, and manage stress often maintain their weight or gain minimally. Weight gain is influenced by multiple factors—hormones are one, but so are choices and circumstances.</p>
-
-                <p><strong>Myth 4: "You should expect to feel terrible during menopause."</strong> FALSE. While many women experience symptoms, not all do. Some women sail through with minimal disruption. Others have significant symptoms but manage them effectively with lifestyle changes or medical support. The cultural narrative of menopause as universally miserable becomes a self-fulfilling prophecy. Yes, prepare for potential symptoms. But don't assume your menopause will be a nightmare—it might be surprisingly manageable.</p>
-
-                <p><strong>Myth 5: "You shouldn't exercise during hot flashes—it will make them worse."</strong> FALSE. While vigorous exercise in a hot environment might trigger a hot flash in the moment, regular exercise overall reduces the frequency and severity of hot flashes. The cardiovascular benefits alone justify staying active. Just exercise in cool conditions, wear moisture-wicking clothing, and stay hydrated.</p>
-
-                <p><strong>Myth 6: "Menopause means the end of sexuality and desire."</strong> FALSE. Some women experience decreased libido during menopause due to hormone changes, sleep deprivation, or mood changes. But many women report that sexuality actually improves once the specter of pregnancy is gone and they feel more confident in their bodies. Vaginal dryness can be addressed with lubrication or hormonal treatments. The narrative that menopause kills sexuality is outdated.</p>
-
-                <p><strong>Myth 7: "You have to tough it out—it's just a natural process."</strong> FALSE. Yes, menopause is natural. So is pain from a broken bone, and we set it and treat it. "Natural" doesn't mean you have to suffer without support. If your symptoms are interfering with your quality of life, you deserve treatment. That might be lifestyle changes, supplements, behavioral interventions, or medical therapies. All are valid and evidence-based.</p>
-
-                <p><strong>Myth 8: "Soy will fix everything."</strong> OVERSTATED. Soy contains isoflavones, which are phytoestrogens (plant compounds that weakly mimic estrogen). Some studies show benefit for hot flashes; others show minimal effect. It's not a magic bullet. That said, soy is a whole food—tofu, edamame, miso—and if you enjoy it, the modest potential benefit plus overall nutritional value makes it worth including in your diet.</p>
-
-                <p><strong>Myth 9: "You should stop all your vitamins and supplements during menopause."</strong> FALSE. Some supplements are worth revisiting—you might not need the same prenatal vitamins if you're no longer trying to conceive. But many supplements are valuable during menopause: magnesium, omega-3 fatty acids, vitamin D, and others. Discuss your supplement regimen with your doctor to ensure you're taking what serves you.</p>
-
-                <p><strong>Myth 10: "Menopause happens overnight."</strong> FALSE. Menopause is a process that typically unfolds over many years. Perimenopause can last 4-10 years, with gradually shifting symptoms and an increasingly erratic period pattern. Understanding this timeline helps you prepare and adjust expectations. It's not like waking up one morning "menopausal"—it's a gradual transition.</p>
-
-                <p><strong>The Takeaway:</strong> Menopause is a biological transition with very real physical and emotional dimensions. But it's not a disease, a punishment, or an inevitable slide into suffering. Armed with accurate information and appropriate support—whether that's lifestyle modifications, community, therapy, or medical treatment—you can navigate this transition with resilience and even vitality.</p>
-
-                <a href="#" class="article-back-to-top">↑ Back to top</a>
-            </div>
-        </article>
-
-        <div class="article-divider"></div>
-
-        <!-- ARTICLE 10 -->
-        <article id="muffin-top">
-            <div class="article-header-image"><img src="blog-images/10-muffin-top.jpg" alt="Mature woman with gray hair exercising at the gym — strength training for midlife fitness" loading="lazy"></div>
-            <div class="article-content">
-                <h2>Ugh, the Menopause Muffin Top</h2>
-                <p class="article-meta">By Dr. Soma Mandal, MD</p>
-
-                <p>You've always been relatively slim, but suddenly in your late 40s or early 50s, weight concentrates around your midsection in a way it never used to. Your jeans fit differently. Your posture feels changed. And it's frustrating because you're not eating significantly more—your body just seems to be distributing fat differently. Welcome to the menopause belly. Let's talk about why it happens and what actually helps.</p>
-
-                <p><strong>The Biology Behind the Muffin Top:</strong> Before menopause, estrogen influences where your body stores fat—typically in your hips, thighs, and breasts. As estrogen drops, that hormonal preference shifts. Your body now preferentially stores fat in your abdomen, around your organs. This isn't a character flaw or a sign of weakness; it's endocrinology. Simultaneously, several metabolic changes converge: your basal metabolic rate drops (you burn fewer calories at rest), your body becomes more insulin-resistant (you're more prone to storing carbohydrates as fat), and cortisol (your stress hormone) may increase, which also promotes belly fat storage. Add in decreased physical activity, sleep disruption, and the fact that you might be eating the same but moving less (due to joint aches or fatigue), and the conditions are perfect for weight gain, especially centrally.</p>
-
-                <p><strong>Why This Matters Beyond Appearance:</strong> Belly fat isn't just cosmetic. Visceral fat (fat around your organs) is metabolically active—it produces inflammatory molecules and increases your risk for cardiovascular disease, type 2 diabetes, and metabolic syndrome. Managing this isn't vanity; it's health. That said, body acceptance matters too. You can work toward health without hating your body.</p>
-
-                <p><strong>Strength Training Is Your Secret Weapon:</strong> This is the most important intervention for menopause belly. Strength training (resistance exercises, weights, bodyweight exercises like push-ups and squats) builds muscle mass, which increases your basal metabolic rate—you burn more calories at rest. It also improves insulin sensitivity and directly counteracts the loss of muscle that accelerates with aging and hormone decline. Aim for 2-3 sessions of strength training per week, targeting all major muscle groups. You don't need a gym—bodyweight exercises at home are highly effective. Studies show that women who prioritize strength training gain significantly less weight during menopause, even without changing their diet.</p>
-
-                <p><strong>Aerobic Exercise Helps Too:</strong> In addition to strength training, regular aerobic exercise (walking, cycling, swimming, running) improves metabolic health and aids weight management. Aim for at least 150 minutes of moderate-intensity aerobic activity per week.</p>
-
-                <p><strong>Nutrition Strategies That Work:</strong> This is where hormonal shifts require strategic eating. First, protein becomes even more important during menopause. Aim for 1.2-1.6 grams of protein per kilogram of body weight daily, distributed throughout the day. Protein supports muscle maintenance, stabilizes blood sugar, and increases satiety. Include protein at every meal and snack. Second, refined carbohydrates and sugar promote insulin spikes and belly fat storage—reduce them and opt for whole grains, vegetables, and legumes instead. Third, fiber (from vegetables, fruits, whole grains, and legumes) supports gut health, stable blood sugar, and satiety. Fourth, healthy fats (olive oil, avocado, nuts, fatty fish) are your friends—they support hormone production and satiety. Finally, processed foods tend to be calorie-dense, nutrient-poor, and easy to overconsume—emphasize whole foods.</p>
-
-                <p><strong>Manage Stress and Sleep:</strong> High cortisol promotes belly fat storage. Chronic stress and sleep deprivation both increase cortisol. Prioritize stress management (meditation, yoga, time in nature, therapy) and sleep hygiene—these indirectly support healthier body composition.</p>
-
-                <p><strong>Consider HRT:</strong> Some studies suggest that hormone replacement therapy can help prevent or reduce menopause-related weight gain and shift fat distribution slightly back toward pre-menopausal patterns. If you're considering HRT for hot flashes or other symptoms, ask your doctor about this potential benefit.</p>
-
-                <p><strong>Realistic Expectations:</strong> You probably won't recreate your 25-year-old body, and that's okay. The goal isn't to fight your biology—it's to be strong, healthy, and comfortable in your own skin. A study following women through menopause found that those who maintained or increased physical activity and didn't restrict calories excessively actually gained very little weight. It's not about eating less; it's about eating better and moving more strategically.</p>
-
-                <p><strong>The Strength-Based Approach:</strong> Rather than focusing on the number on the scale or how your jeans fit, shift your mindset toward building strength and health. How much can you deadlift? Can you do a push-up? Are you sleeping better? Do you have more energy? These markers of health and capability matter more than where your body stores fat. And often, when you shift to a strength-focused approach, the aesthetic changes follow naturally.</p>
-
-                <p>The menopause muffin top is real, it's frustrating, and it's modifiable. With consistent strength training, strategic nutrition, stress management, and self-compassion, you can navigate this change with your health and dignity intact.</p>
-
-                <a href="#" class="article-back-to-top">↑ Back to top</a>
-            </div>
-        </article>
-    </main>
-
-    <!-- ===== FOOTER ===== -->
-    <footer>
-        <p>&copy; 2026 Dr. Soma Mandal, MD</p>
-        <p><a href="index.html">Back to Home</a></p>
-    </footer>
 </body>
 </html>
