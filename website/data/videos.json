@@ -1,47 +1,47 @@
 {
-    "lastUpdated": "2026-04-06",
-    "featured": {
-          "id": "RqoSDgFcWO4",
-          "title": "Why South Asians Get Heart Disease Even Without Symptoms",
-          "description": "Dr. Mandal explores the hidden cardiovascular risks disproportionately affecting South Asians, revealing why traditional warning signs are often absent and what proactive steps women can take to protect their heart health.",
-          "category": "Health"
+  "lastUpdated": "2026-04-06",
+  "featured": {
+    "id": "RqoSDgFcWO4",
+    "title": "Why South Asians Get Heart Disease Even Without Symptoms",
+    "description": "Dr. Mandal explores the hidden cardiovascular risks disproportionately affecting South Asians, revealing why traditional warning signs are often absent and what proactive steps women can take to protect their heart health.",
+    "category": "Health"
+  },
+  "grid": [
+    {
+      "id": "jqn7LdbdwJ8",
+      "title": "Acupuncture Releases Serotonin & Dopamine: Here's How",
+      "category": "Integrative Medicine",
+      "views": "9.6K"
     },
-    "grid": [
-          {
-                  "id": "jqn7LdbdwJ8",
-                  "title": "Acupuncture Releases Serotonin & Dopamine: Here's How",
-                  "category": "Integrative Medicine",
-                  "views": "9.6K"
-          },
-          {
-                  "id": "iAGQMdAXy74",
-                  "title": "Is Modern Plastic Surgery Actually About Aging Well?",
-                  "category": "Women's Health",
-                  "views": "5.5K"
-          },
-          {
-                  "id": "1J3VClQcBzg",
-                  "title": "Your Nervous System Is Dysregulated and You Don't Even Know It",
-                  "category": "Mind & Body",
-                  "views": "15K"
-          },
-          {
-                  "id": "3AO4GiD8el8",
-                  "title": "What Doctors Miss About Women's Hormones and Fatigue",
-                  "category": "Hormones",
-                  "views": "9.9K"
-          },
-          {
-                  "id": "HUblm4pWK6E",
-                  "title": "Women Burning Out? Your Soul Blueprint Has the Answer",
-                  "category": "Mind & Body",
-                  "views": "6.8K"
-          },
-          {
-                  "id": "7Q64ERq6R5Y",
-                  "title": "Food Guilt, Body Shame, and Unrealistic Standards: A Woman's Reality",
-                  "category": "Body Image",
-                  "views": "13K"
-          }
-    ]
+    {
+      "id": "iAGQMdAXy74",
+      "title": "Is Modern Plastic Surgery Actually About Aging Well?",
+      "category": "Women's Health",
+      "views": "5.5K"
+    },
+    {
+      "id": "1J3VClQcBzg",
+      "title": "Your Nervous System Is Dysregulated and You Don't Even Know It",
+      "category": "Mind & Body",
+      "views": "15K"
+    },
+    {
+      "id": "3AO4GiD8el8",
+      "title": "What Doctors Miss About Women's Hormones and Fatigue",
+      "category": "Hormones",
+      "views": "9.9K"
+    },
+    {
+      "id": "HUblm4pWK6E",
+      "title": "Women Burning Out? Your Soul Blueprint Has the Answer",
+      "category": "Mind & Body",
+      "views": "6.8K"
+    },
+    {
+      "id": "7Q64ERq6R5Y",
+      "title": "Food Guilt, Body Shame, and Unrealistic Standards: A Woman's Reality",
+      "category": "Body Image",
+      "views": "13K"
+    }
+  ]
 }
