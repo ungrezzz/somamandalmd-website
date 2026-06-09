@@ -1,47 +1,47 @@
 {
-  "lastUpdated": "2026-04-06",
+  "lastUpdated": "2026-06-08",
   "featured": {
-    "id": "RqoSDgFcWO4",
-    "title": "Why South Asians Get Heart Disease Even Without Symptoms",
-    "description": "Dr. Mandal examines why South Asians face disproportionately high rates of heart disease even without classic warning signs. She outlines the underlying risk factors and the proactive steps that can make a meaningful difference.",
+    "id": "DxeCwEFu2Z4",
+    "title": "Struggling to Get Speech Therapy? You Are Not Alone",
+    "description": "Dr. Mandal addresses the frustration many families face in accessing speech therapy, offering reassurance and practical guidance for navigating a difficult system.",
     "category": "Health"
   },
   "grid": [
     {
+      "id": "WKiWXumxYjs",
+      "title": "Midlife Confidence: Reclaiming Your Power in Perimenopause",
+      "category": "Women's Health",
+      "views": "1.5K"
+    },
+    {
+      "id": "ZvcF9JN_GQw",
+      "title": "Normal Results Aren't the Whole Story",
+      "category": "Health",
+      "views": "12K"
+    },
+    {
+      "id": "RqoSDgFcWO4",
+      "title": "Why South Asians Get Heart Disease Even Without Symptoms",
+      "category": "Health",
+      "views": "17K"
+    },
+    {
       "id": "jqn7LdbdwJ8",
       "title": "Acupuncture Releases Serotonin & Dopamine: Here's How",
       "category": "Integrative Medicine",
-      "views": "9.6K"
+      "views": "13K"
     },
     {
       "id": "iAGQMdAXy74",
       "title": "Is Modern Plastic Surgery Actually About Aging Well?",
       "category": "Body Image",
-      "views": "5.5K"
+      "views": "9.8K"
     },
     {
       "id": "1J3VClQcBzg",
       "title": "Your Nervous System Is Dysregulated and You Don't Even Know It",
       "category": "Mind & Body",
       "views": "15K"
-    },
-    {
-      "id": "3AO4GiD8el8",
-      "title": "What Doctors Miss About Women's Hormones and Fatigue",
-      "category": "Hormones",
-      "views": "9.9K"
-    },
-    {
-      "id": "HUblm4pWK6E",
-      "title": "Women Burning Out? Your Soul Blueprint Has the Answer",
-      "category": "Women's Health",
-      "views": "6.8K"
-    },
-    {
-      "id": "7Q64ERq6R5Y",
-      "title": "Food Guilt, Body Shame, and Unrealistic Standards: A Woman's Reality",
-      "category": "Body Image",
-      "views": "13K"
     }
   ]
 }
