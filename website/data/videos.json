@@ -1,12 +1,18 @@
 {
-  "lastUpdated": "2026-07-16",
+  "lastUpdated": "2026-09-01",
   "featured": {
-    "id": "RyyYP26L_Qs",
-    "title": "Is Perimenopause Stealing Your Confidence? Here’s How to Take Control",
-    "description": "Dr. Mandal explores how perimenopause can quietly erode a woman's confidence and shares practical strategies for recognizing the shift and taking back control.",
+    "id": "LSHgr1w_M3E",
+    "title": "The 'Women's Health Gap': A Doctor's First-Principles Approach",
+    "description": "Dr. Mandal examines why women's health has been chronically under-researched and under-treated. She lays out a first-principles approach to closing the gap in everyday clinical care.",
     "category": "Women's Health"
   },
   "grid": [
+    {
+      "id": "RyyYP26L_Qs",
+      "title": "Is Perimenopause Stealing Your Confidence? Here’s How to Take Control",
+      "category": "Hormones",
+      "views": "766"
+    },
     {
       "id": "DxeCwEFu2Z4",
       "title": "Struggling to Get Speech Therapy? You Are Not Alone",
@@ -36,12 +42,6 @@
       "title": "Is Modern Plastic Surgery Actually About Aging Well?",
       "category": "Body Image",
       "views": "9.8K"
-    },
-    {
-      "id": "1J3VClQcBzg",
-      "title": "Your Nervous System Is Dysregulated and You Don't Even Know It",
-      "category": "Mind & Body",
-      "views": "15K"
     }
   ]
 }
